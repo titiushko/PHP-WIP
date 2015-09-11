@@ -1,0 +1,91 @@
+/* Hoja de Estilo Por Erik Blanco Bates */
+
+/* Para los Link */
+a{
+	text-decoration:underline;
+	cursor:pointer;
+}
+/*Principal Armo la cajita para mostrar los datos aqui simula la barra ser la tabla */
+#barra{
+	display:table;
+	width:700px;
+	border:1px solid #0066CC;
+	margin:auto;
+	text-align:center;
+}
+
+#formulario{
+	display:table;
+	width:300px;
+	border:1px solid #0066CC;
+	margin:auto;
+	text-align:center;
+}
+/* Para el Encabezado */
+#barra1{
+
+	display:table;
+	width:150px;
+	background-color:#2ea3d0;
+	border:1px solid #0066CC;
+	margin:auto;
+	text-align:center;
+}
+/* Para Agregar Registros */
+#agregar{
+
+	display:table;
+	width:700px;
+	background-color:#2ea3d0;
+	border:1px solid #0066CC;
+	margin:auto;
+
+}
+/* Empieza el Proceso de los encabezados que mostrara el Listado */
+/* Aqui sere por Tabla para mostrar Los Listados */
+/* Campos Tabla */
+.c_nombre{
+	float:left;
+	width:200px;
+	text-align:center;
+	
+	font-size:10px;
+	 font-family:Arial;
+}
+.c_departamento{	
+	float:left;
+	width:150px;
+	text-align:center;
+	
+	font-size:10px;
+	 font-family:Arial;
+}
+.c_sueldo{	
+	float:left;
+	width:260px;
+	
+	font-size:10px;
+	 font-family:Arial;
+}
+.c_opciones{
+    float_left;
+	width:270;
+    font-size:10px;
+	font-family:Arial;
+}
+/* Encabezado del Catalogo */
+.c_catalogo{
+   font-size:10px; 
+   font-family:Arial;
+   color: #FFFFFF;
+   text-align:center;
+}
+.f_catalogo{
+   font-size:10px;
+   
+   font-family:Arial;
+   color: #FFFFFF;
+   text-align:center;
+}
+
+

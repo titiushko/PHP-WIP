@@ -1,0 +1,2 @@
+copia la carpeta ajax a tu servidor local o remoto configura la  conexion en la carpeta php en el archivo opciones.php
+en la funcion conectar

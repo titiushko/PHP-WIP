@@ -1,0 +1,26 @@
+FUNCIONES EN PHP
+Una de las herramientas más importantes en cualquier lenguaje de programación son las funciones. Una función consiste en un conjunto de rutinas y acciones que a lo largo del script van a ser ejecutadas multitud de veces agrupados en una FUNCION y desde cualquier punto del script puede ser llamada y ejecutada. A su vez, esta función puede recibir parámetros externos de los cuales dependa el resultado de una función.
+
+Las funciones deben ser colocadas siempre antes de realizar la llamada a la función (como es lógico). La sintaxis de una función es la siguiente:
+
+function nombre(parámetros){
+   instrucciones de la función
+}
+para llamar a la función sería de la siguiente forma: nombre(parámetros)
+
+Un ejemplo para entender el uso de funciones es el siguiente:
+Crearemos una función que realice la suma de dos números y muestre el resultado
+
+function sumar($sumando1,$sumando2){
+  $ suma=$sumando1+$sumando2
+echo $sumando1."+".$sumando2."=".$suma;
+}
+
+sumar(5,6)
+
+Un hecho relevante que cabe destacar es que las variables que declaremos dentro de la función solo existirán o tendrán dicho valor dentro de la función.
+
+Existen casos en los cuales no sabemos el número de parámetros que le pasaremos a la función y en estos casos debemos usar las funciones creadas al efecto como son:
+
+func_num_args() Numero de parámetros que se le han pasado a la función
+func_get_args() Devuelve un elemento de los que forman la lista de argumentos.

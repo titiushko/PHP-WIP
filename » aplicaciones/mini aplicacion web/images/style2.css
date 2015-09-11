@@ -1,0 +1,510 @@
+BODY {
+	MARGIN: 0px; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+A {
+	FONT-WEIGHT: normal; COLOR: #0000ff; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-DECORATION: none
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; MARGIN-BOTTOM: 2px; COLOR: #052101; FONT-FAMILY: Arial, Helvetica, Verdana; HEIGHT: 18px
+}
+IMG {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 0px solid
+}
+TD {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+TH {
+	COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-ALIGN: left
+}
+P {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+SELECT {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+INPUT {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+INPUT.button {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(../images/button.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 130px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "Verdana", "Tahoma", "Arial"; HEIGHT: 22px; BACKGROUND-COLOR: transparent
+}
+HR {
+	COLOR: #1d7d76; HEIGHT: 1px
+}
+OPTION.normal {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #ffffff
+}
+OPTION.grey {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #a4acab; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #ffffff
+}
+INPUT.checkbox_tri {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 0px; BACKGROUND-IMAGE: url(../images/tri_greycheck.gif); MARGIN: 3px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: 0px; WIDTH: 13px; CURSOR: default; BORDER-BOTTOM: 0px; HEIGHT: 13px
+}
+INPUT.checkbox_on {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 0px; BACKGROUND-IMAGE: url(../images/tri_check.gif); MARGIN: 3px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: 0px; WIDTH: 13px; CURSOR: default; BORDER-BOTTOM: 0px; HEIGHT: 13px
+}
+INPUT.checkbox_off {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 0px; BACKGROUND-IMAGE: url(../images/tri_nocheck.gif); MARGIN: 3px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: 0px; WIDTH: 13px; CURSOR: default; BORDER-BOTTOM: 0px; HEIGHT: 13px
+}
+INPUT.checkbox_on_disabled {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 0px; BACKGROUND-IMAGE: url(../images/tri_check_disabled.gif); MARGIN: 3px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: 0px; WIDTH: 13px; CURSOR: default; BORDER-BOTTOM: 0px; HEIGHT: 13px
+}
+INPUT.checkbox_off_disabled {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 0px; BACKGROUND-IMAGE: url(../images/tri_nocheck_disabled.gif); MARGIN: 3px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: 0px; WIDTH: 13px; CURSOR: default; BORDER-BOTTOM: 0px; HEIGHT: 13px
+}
+SPAN.intf_col {
+	MARGIN-LEFT: 25px; WHITE-SPACE: nowrap
+}
+TABLE.container .button_normal {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+TABLE.container .button_normal TD.begin {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 11px; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(/../images/button_left.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; CURSOR: default; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Verdana, Arial; HEIGHT: 22px
+}
+TABLE.container .button_normal TD.end {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9px; BACKGROUND-IMAGE: url(/../images/button_end.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 11px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; HEIGHT: 22px
+}
+TABLE.container .button_dropdown {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+TABLE.container .button_dropdownlink {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+TABLE.container .button_dropdown TD.default_button {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: 0px; PADDING-LEFT: 12px; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(/../images/button_left.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; CURSOR: default; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Verdana, Arial; HEIGHT: 22px; TEXT-ALIGN: center
+}
+TABLE.container .button_dropdownlink TD.default_button {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: 0px; PADDING-LEFT: 12px; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(/../images/button_left.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; CURSOR: default; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Verdana, Arial; HEIGHT: 22px; TEXT-ALIGN: center
+}
+TABLE.container .button_dropdownlink TD.button_separator_on {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: right 50%; BORDER-TOP: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(/../images/button_separator.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 2px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; HEIGHT: 22px
+}
+TABLE.container .button_dropdownlink TD.button_separator_off {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: right 50%; BORDER-TOP: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(/../images/button_left.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 2px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; HEIGHT: 22px
+}
+TABLE.container .button_dropdown TD.options_button {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: right 50%; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9px; BACKGROUND-IMAGE: url(/../images/button_right.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 25px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+TABLE.container .button_dropdownlink TD.options_button {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: right 50%; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9px; BACKGROUND-IMAGE: url(/../images/button_right.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 25px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+TABLE.container .button_dropdown UL.dropdown {
+	CLEAR: both; BORDER-RIGHT: #000000 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #eeeeee 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #eeeeee 1px solid; WIDTH: 130px; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 2px solid; LIST-STYLE-TYPE: none; POSITION: absolute; BACKGROUND-COLOR: #cccccc
+}
+TABLE.container .button_dropdownlink UL.dropdown {
+	CLEAR: both; BORDER-RIGHT: #000000 2px solid; PADDING-RIGHT: 0px; BORDER-TOP: #eeeeee 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #eeeeee 1px solid; WIDTH: 130px; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 2px solid; LIST-STYLE-TYPE: none; POSITION: absolute; BACKGROUND-COLOR: #cccccc
+}
+TABLE.container .button_dropdown UL.dropdown LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE.container .button_dropdownlink UL.dropdown LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE.container .button_dropdown UL.dropdown LI A {
+	PADDING-RIGHT: 9px; DISPLAY: block; PADDING-LEFT: 9px; FONT-WEIGHT: normal; FONT-SIZE: 9px; PADDING-BOTTOM: 4px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 4px; FONT-FAMILY: Tahoma, Verdana, Arial; TEXT-DECORATION: none
+}
+TABLE.container .button_dropdownlink UL.dropdown LI A {
+	PADDING-RIGHT: 9px; DISPLAY: block; PADDING-LEFT: 9px; FONT-WEIGHT: normal; FONT-SIZE: 9px; PADDING-BOTTOM: 4px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 4px; FONT-FAMILY: Tahoma, Verdana, Arial; TEXT-DECORATION: none
+}
+TABLE.container .button_dropdown UL.dropdown LI A:hover {
+	PADDING-RIGHT: 9px; DISPLAY: block; PADDING-LEFT: 9px; FONT-WEIGHT: normal; FONT-SIZE: 9px; PADDING-BOTTOM: 4px; MARGIN: 0px; COLOR: white; PADDING-TOP: 4px; FONT-FAMILY: Tahoma, Verdana, Arial; BACKGROUND-COLOR: #523E5C; TEXT-DECORATION: none
+}
+TABLE.container .button_dropdownlink UL.dropdown LI A:hover {
+	PADDING-RIGHT: 9px; DISPLAY: block; PADDING-LEFT: 9px; FONT-WEIGHT: normal; FONT-SIZE: 9px; PADDING-BOTTOM: 4px; MARGIN: 0px; COLOR: white; PADDING-TOP: 4px; FONT-FAMILY: Tahoma, Verdana, Arial; BACKGROUND-COLOR: #523E5C; TEXT-DECORATION: none
+}
+ HTML TABLE.container .button_dropdownlink UL.dropdown LI A {
+	WIDTH: 129px
+}
+BODY.main {
+	MARGIN: 5px; BACKGROUND-COLOR: #ddeeee
+}
+TABLE.container {
+	BORDER-RIGHT: #a6b3a6 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; BORDER-BOTTOM: #a6b3a6 1px solid; BACKGROUND-COLOR: #d5e6e5
+}
+TABLE.container TD {
+	COLOR: #003431; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+TABLE.dialog {
+	BORDER-RIGHT: #a6b3a6 1px solid; BORDER-TOP: #ffffff 1px solid; MARGIN-TOP: 15px; MARGIN-BOTTOM: 15px; BORDER-LEFT: #ffffff 1px solid; COLOR: #003431; BORDER-BOTTOM: #a6b3a6 1px solid; FONT-FAMILY: Arial, Helvetica, Verdana; BACKGROUND-COLOR: #d5e6e5
+}
+TABLE.dialog TABLE.header {
+	BORDER-TOP: #ffffff 1px solid; FONT-WEIGHT: bold; WIDTH: 100%; BORDER-BOTTOM: #ffffff 2px inset; HEIGHT: 25px; BACKGROUND-COLOR: #c0d4d4; TEXT-ALIGN: center
+}
+TABLE.dialog TABLE.header TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; TEXT-ALIGN: center
+}
+TABLE.dialog TABLE.body {
+	WIDTH: 100%
+}
+TABLE.body TD {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 9px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BACKGROUND-COLOR: #d5e6e5
+}
+TABLE.dialog TD.body {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 9px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+TABLE.dialog TABLE.footer {
+	BORDER-TOP: #ffffff 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ffffff 2px inset; HEIGHT: 25px; BACKGROUND-COLOR: #c0d4d4
+}
+TABLE.dialog TABLE.footer TD {
+	FONT-SIZE: 10px; TEXT-ALIGN: center
+}
+TABLE.dialog TABLE.body TD.confirm {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; FONT-WEIGHT: bold; BORDER-LEFT: 1px; COLOR: #ff0000; BORDER-BOTTOM: 1px; HEIGHT: 100px; TEXT-ALIGN: center
+}
+TABLE.container TR.dark {
+	BACKGROUND-COLOR: #c0d4d4
+}
+TABLE.container TR.dark TD {
+	BORDER-RIGHT: #ffffff 0px solid; PADDING-RIGHT: 25px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 15px; FONT-SIZE: 10px; PADDING-BOTTOM: 1px; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 2px inset
+}
+TABLE.container TR.top_dialog {
+	BACKGROUND-COLOR: #c0d4d4
+}
+TABLE.container TR.top_dialog TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 10px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #c0d4d4
+}
+TABLE.container TR.head {
+	BACKGROUND-COLOR: #c9dfdf
+}
+TABLE.container TR.head TD {
+	BORDER-RIGHT: #ffffff 0px solid; PADDING-RIGHT: 5px; BORDER-TOP: #bfd6d6 1px solid; PADDING-LEFT: 15px; FONT-SIZE: 10px; PADDING-BOTTOM: 1px; PADDING-TOP: 3px; BORDER-BOTTOM: #bfd6d6 1px solid; BACKGROUND-COLOR: #c9dfdf
+}
+TABLE.container TD.label {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 10px; PADDING-BOTTOM: 1px; PADDING-TOP: 3px; TEXT-ALIGN: right
+}
+TABLE.container A {
+	FONT-WEIGHT: bold; COLOR: #005555; TEXT-DECORATION: underline
+}
+TABLE.container A:hover {
+	FONT-WEIGHT: bold; COLOR: #990000; TEXT-DECORATION: underline
+}
+TABLE.container TABLE.list {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 9px; MARGIN-BOTTOM: 5px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 98%; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #99cccc
+}
+TABLE.list TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #cae2d7 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #c1dcdc; TEXT-ALIGN: center
+}
+TABLE.list TD.action {
+	VERTICAL-ALIGN: middle; BORDER-BOTTOM: #d7e0de 1px solid; HEIGHT: 18px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.list TR.heading {
+	BACKGROUND-COLOR: #669999
+}
+TABLE.list TR.odd TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #e0eee0
+}
+TABLE.list TR.disabled TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #c2c2c2
+}
+TABLE.list TR.odd TD.noborder {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BACKGROUND-COLOR: #e0eee0; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.list TR.over TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #f9fab5
+}
+TABLE.list TR.critical TD A:hover {
+	COLOR: #990000; BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #e0eee0; TEXT-DECORATION: underline
+}
+TABLE.list TR.log_emergency TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #ffa0a0
+}
+TABLE.list TR.log_alert TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #ffc0a3
+}
+TABLE.list TR.log_critical TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #ffd850
+}
+TABLE.list TR.log_error TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #ffffb0
+}
+TABLE.list TR.log_warning TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #c8c8ff
+}
+TABLE.list TR.log_notice TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #cceedd
+}
+TABLE.list TR.log_information TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #e8e8e8
+}
+TABLE.list TR.log_debug TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #c1dcdc
+}
+TABLE.list TR.highlight TD {
+	BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #f9fab5
+}
+TABLE.list TR.heading TD {
+	BACKGROUND: url(../images/tableheadpattern.gif); VERTICAL-ALIGN: middle; BORDER-BOTTOM: #74908f 1px solid; HEIGHT: 18px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.list TR.heading TH {
+	BACKGROUND: url(../images/tableheadpattern.gif); VERTICAL-ALIGN: middle; BORDER-BOTTOM: #74908f 1px solid; HEIGHT: 18px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.list TD.key {
+	FONT-WEIGHT: bold; CURSOR: pointer; COLOR: #ffffff; BACKGROUND-COLOR: #669999; TEXT-DECORATION: underline
+}
+TABLE.list TR.odd TD.key {
+	FONT-WEIGHT: bold; CURSOR: pointer; COLOR: #ffffff; BACKGROUND-COLOR: #669999; TEXT-DECORATION: underline
+}
+TABLE.list TD.keydown {
+	FONT-WEIGHT: bold; COLOR: #006666; BACKGROUND-COLOR: #b9dcd3; TEXT-DECORATION: underline
+}
+TABLE.list TR.odd TD.keydown {
+	FONT-WEIGHT: bold; COLOR: #006666; BACKGROUND-COLOR: #ddeedc; TEXT-DECORATION: underline
+}
+TABLE.list UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; LIST-STYLE-IMAGE: url(/../images/dot.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-INDENT: -3px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+TABLE.list TD.left {
+	PADDING-BOTTOM: 1px; VERTICAL-ALIGN: middle; PADDING-TOP: 1px; TEXT-ALIGN: left
+}
+TABLE.list TD.cent {
+	PADDING-BOTTOM: 1px; VERTICAL-ALIGN: middle; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+TABLE.list TR.heading TD.left {
+	TEXT-ALIGN: left
+}
+TABLE.list A {
+	FONT-WEIGHT: bold
+}
+TABLE.list A:hover {
+	FONT-WEIGHT: bold; COLOR: #990000; TEXT-DECORATION: underline
+}
+TABLE.plainwborder {
+	FONT-SIZE: 10px; WIDTH: 100%; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #99cccc
+}
+TABLE.db_intf {
+	BORDER-RIGHT: #9bc6b7 1px solid; BORDER-TOP: #9bc6b7 1px solid; FONT-SIZE: 11px; BACKGROUND: url(/../images/bg_intf.gif) #e9f7f7 no-repeat; BORDER-LEFT: #9bc6b7 1px solid; WIDTH: 100%; BORDER-BOTTOM: #9bc6b7 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+TABLE.infotable {
+	BORDER-RIGHT: #9bc6b7 1px solid; BORDER-TOP: #9bc6b7 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #9bc6b7 1px solid; WIDTH: 100%; BORDER-BOTTOM: #9bc6b7 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #99cccc
+}
+TABLE.infotable TD {
+	PADDING-RIGHT: 2px; BORDER-TOP: #a3e6c6 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; COLOR: #003431; PADDING-TOP: 3px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #e9f7f7
+}
+TABLE.infotable TD.plain {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #e9f7f7
+}
+TABLE.infotable TD.dotted {
+	PADDING-RIGHT: 0px; BORDER-TOP: #a3e6c6 1px dashed; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; COLOR: #003431; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #e9f7f7
+}
+TABLE.infotable A {
+	COLOR: #007a6a
+}
+TABLE.infotable A:hover {
+	COLOR: #990000; TEXT-DECORATION: underline
+}
+TABLE.infotable TR.heading TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: url(../images/tableheadpattern.gif) #669999; VERTICAL-ALIGN: middle; COLOR: #052101; FONT-FAMILY: Verdana, Arial, Helvetica; HEIGHT: 18px; TEXT-ALIGN: left
+}
+TABLE.infotable TR.over TD {
+	PADDING-RIGHT: 2px; BORDER-TOP: #a3e6c6 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; COLOR: #003431; PADDING-TOP: 3px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #f9fab5
+}
+TABLE.matrix {
+	BORDER-RIGHT: #9bc6b7 1px solid; BORDER-TOP: #9bc6b7 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #9bc6b7 1px solid; WIDTH: 80%; BORDER-BOTTOM: #9bc6b7 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #99cccc
+}
+TABLE.matrix TD {
+	PADDING-RIGHT: 2px; BORDER-TOP: #a3e6c6 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; COLOR: #003431; PADDING-TOP: 3px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+TABLE.matrix A {
+	COLOR: #007a6a
+}
+TABLE.matrix A:hover {
+	COLOR: #990000; TEXT-DECORATION: underline
+}
+TABLE.matrix TR.heading {
+	BACKGROUND-COLOR: #669999
+}
+TABLE.matrix TD.active {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; VERTICAL-ALIGN: middle; PADDING-TOP: 1px; BACKGROUND-COLOR: #f3fac1
+}
+TABLE.matrix TD.notactive {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; VERTICAL-ALIGN: middle; PADDING-TOP: 1px; BACKGROUND-COLOR: #ffffff
+}
+TABLE.matrix TR.heading TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: url(../images/tableheadpattern.gif) #669999; VERTICAL-ALIGN: middle; COLOR: #052101; FONT-FAMILY: Verdana, Arial, Helvetica; HEIGHT: 18px
+}
+TABLE.graph {
+	BORDER-RIGHT: #229483 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #229483 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #229483 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #229483 1px solid
+}
+TABLE.graph TD {
+	BORDER-RIGHT: #73aaa2 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TD.graph_red {
+	BORDER-RIGHT: #73aaa2 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/graph_on_red.gif); PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TABLE.graph TR {
+	BORDER-RIGHT: #73aaa2 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TABLE.chart {
+	BORDER-RIGHT: #229483 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #229483 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #229483 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #229483 0px solid
+}
+TABLE.chart TD {
+	BORDER-RIGHT: #229483 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #229483 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #229483 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #229483 0px solid
+}
+TABLE.chart TR {
+	BORDER-RIGHT: #229483 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #229483 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #229483 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #229483 0px solid
+}
+TD.heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+TABLE.cont {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; WIDTH: 100%; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+A.error {
+	COLOR: #bd0000; BORDER-BOTTOM: #cae2d7 1px solid; BACKGROUND-COLOR: #e0eee0; TEXT-DECORATION: none
+}
+TABLE.normal {
+	FONT-SIZE: 11px; WIDTH: 100%; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #ddeeee
+}
+TABLE.normal TD {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #ddeeee
+}
+UL.resources {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI.meter {
+	BACKGROUND-POSITION: center top; DISPLAY: block; FLOAT: left; BACKGROUND-IMAGE: url(../images/meter_bg.gif); BACKGROUND-REPEAT: no-repeat; LIST-STYLE-TYPE: none; HEIGHT: 130px; TEXT-ALIGN: center
+}
+LI.piechart {
+	DISPLAY: block; FLOAT: left; WIDTH: 33%; LIST-STYLE-TYPE: none; HEIGHT: 130px; TEXT-ALIGN: center
+}
+LI.piechart IMG {
+	MARGIN-BOTTOM: 12px
+}
+.interim {
+	FONT-WEIGHT: bold; FONT-SIZE: 28px; COLOR: #ffbb5d; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+BODY.mainnav {
+	MARGIN: 15px 3px 0px 0px; BACKGROUND-COLOR: #523E5C
+}
+TABLE.mainnav {
+	WIDTH: 135px
+}
+TD.menu_spacer1 {
+	HEIGHT: 2px
+}
+TD.menu_spacer2 {
+	HEIGHT: 0px
+}
+TD.menu_level1 {
+	PADDING-LEFT: 21px; FONT-WEIGHT: bold; FONT-SIZE: 9px; BACKGROUND: url(../images/bglevel1_2.gif) no-repeat; VERTICAL-ALIGN: middle; WIDTH: 138px; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 2px; FONT-FAMILY: Arial, Helvetica, Verdana; HEIGHT: 28px
+}
+TD.menu_level12 {
+	PADDING-LEFT: 21px; FONT-WEIGHT: bold; FONT-SIZE: 9px; BACKGROUND: url(../images/bglevel1_1.gif) no-repeat; VERTICAL-ALIGN: middle; WIDTH: 138px; CURSOR: pointer; COLOR: #7d3333; PADDING-TOP: 2px; FONT-FAMILY: Arial, Helvetica, Verdana; HEIGHT: 28px
+}
+TD.menu_level1 A {
+	FONT-SIZE: 55px; VERTICAL-ALIGN: middle; CURSOR: pointer; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Verdana
+}
+TD.menu_level1_over {
+	PADDING-LEFT: 21px; FONT-WEIGHT: bold; FONT-SIZE: 9px; BACKGROUND: url(../images/bglevel1_12.gif) no-repeat; VERTICAL-ALIGN: middle; WIDTH: 138px; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 2px; FONT-FAMILY: Arial, Helvetica, Verdana; HEIGHT: 28px
+}
+TD.menu_level2 {
+	PADDING-LEFT: 21px; FONT-SIZE: 11px; BACKGROUND: url(../images/bglevel2_2.gif) no-repeat; VERTICAL-ALIGN: middle; WIDTH: 138px; CURSOR: pointer; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Verdana; HEIGHT: 19px
+}
+TD.level2_over {
+	PADDING-LEFT: 21px; FONT-SIZE: 11px; BACKGROUND: url(../images/bglevel2_3.gif) no-repeat; VERTICAL-ALIGN: middle; WIDTH: 138px; CURSOR: pointer; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Verdana; HEIGHT: 19px
+}
+TD.level2_on {
+	PADDING-LEFT: 21px; FONT-SIZE: 11px; BACKGROUND: url(../images/bglevel2_1.gif) no-repeat; VERTICAL-ALIGN: middle; WIDTH: 138px; CURSOR: pointer; COLOR: #620a0c; FONT-FAMILY: Arial, Helvetica, Verdana; HEIGHT: 19px
+}
+TD.foldinglist {
+	PADDING-TOP: 2px
+}
+TD.clsTab {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; VERTICAL-ALIGN: middle; CURSOR: pointer; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+TD.clsTab A {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; VERTICAL-ALIGN: middle; CURSOR: pointer; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+BODY.footer {
+	MARGIN: 0px; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+BODY.footer TABLE.footer {
+	BACKGROUND: url(../images/footer_pattern.gif); HEIGHT: 19px
+}
+TABLE.footer TD {
+	FONT-SIZE: 11px
+}
+TABLE.wizard {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px; HEIGHT: 100%; BACKGROUND-COLOR: #ddeeee
+}
+TABLE.wizard_footer {
+	BORDER-TOP: #ffffff 1px solid; BACKGROUND-COLOR: #b5d4cf
+}
+TD.wizard_previous {
+	FONT-WEIGHT: normal; BACKGROUND: url(../images/wizard_m3.gif) no-repeat; COLOR: #ffffff; HEIGHT: 29px; TEXT-ALIGN: center
+}
+TD.wizard_current {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/wizard_m1.gif) no-repeat; COLOR: #990000; HEIGHT: 29px; TEXT-ALIGN: center
+}
+TD.wizard_next {
+	FONT-WEIGHT: normal; BACKGROUND: url(../images/wizard_m2.gif) no-repeat; COLOR: #ddeeee; HEIGHT: 29px; TEXT-ALIGN: center
+}
+INPUT.button_wizard {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 9px; BACKGROUND-IMAGE: url(../images/button_wizard.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "Verdana", "Tahoma", "Arial"; HEIGHT: 22px; BACKGROUND-COLOR: transparent
+}
+colorchooser {
+	WIDTH: 16px; HEIGHT: 12px
+}
+INPUT.colorchooser {
+	WIDTH: 24px; HEIGHT: 18px
+}
+TD.colorchooser {
+	WIDTH: 16px; HEIGHT: 12px
+}
+TD.sm_colorchooser {
+	WIDTH: 8px; HEIGHT: 6px
+}
+TD.fgd-heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; TEXT-DECORATION: underline
+}
+#fgd-service H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; TEXT-DECORATION: underline
+}
+TD.fgd-heading {
+	BORDER-TOP: #000000 1px solid
+}
+#fgd-service {
+	BORDER-TOP: #000000 1px solid
+}
+TD.fgd-svc-type {
+	TEXT-INDENT: 0em
+}
+TD.fgd-cache-opts {
+	TEXT-INDENT: 2em
+}
+UNKNOWN {
+	MARGIN-RIGHT: 2em
+}
+TD.fgd-cent-image {
+	PADDING-LEFT: 2em; WHITE-SPACE: nowrap; TEXT-ALIGN: center
+}
+TD.fgd-stat-image {
+	WHITE-SPACE: nowrap; TEXT-ALIGN: center
+}
+#fgd-service H1 {
+	PADDING-LEFT: 2em; FONT-SIZE: 1em; BACKGROUND-IMAGE: url(../images/twistie_collapsed.gif); BACKGROUND-REPEAT: no-repeat
+}
+#fgd-subscription DIV {
+	PADDING-LEFT: 1em
+}
+#fgd-webfiltering TABLE {
+	WIDTH: 100%
+}
+#pushupdimg {
+	MARGIN-LEFT: 1em
+}
+IMG.email-attach {
+	DISPLAY: block; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+TABLE.email-heading {
+	WIDTH: 100%; BACKGROUND-COLOR: #c0d4d4
+}
+TD.email-heading-name {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: top; WIDTH: 150px
+}
+TD.email-heading-val {
+	PADDING-LEFT: 1em; PADDING-BOTTOM: 0.5em
+}
+P.email-content {
+	OVERFLOW: auto; HEIGHT: 300px
+}

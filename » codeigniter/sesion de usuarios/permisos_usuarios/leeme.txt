@@ -1,0 +1,9 @@
+nombre de la base de datos: examples_permisos
+
+Administrador
+usuario: admin
+password: admin
+
+Consultor
+usuario: consultor
+password: consultor

@@ -1,0 +1,5 @@
+- grids con el catalogo de las tablas de la bd
+- exportar a excel y word
+- enviar correo
+- sistema de login
+- paginador

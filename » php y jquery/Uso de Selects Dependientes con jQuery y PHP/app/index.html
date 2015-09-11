@@ -1,0 +1,69 @@
+<html>
+<head>
+
+<!-- Llamamos a la libreria Jquery (Abajo los links de descargar)-->
+
+<script type="text/javascript" src="jquery-1.5.2.js"></script>
+
+<!-- Nuestras instrucciones de Jquery las tenemos en un archivo llamado "funciones.js", el cual se manda a llamar también -->
+
+<script type="text/javascript" src="funciones.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function()
+
+{
+
+select_dependiente(); //&nbsp; &nbsp; &nbsp; Llamado de la función alojada en funciones.js
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<form &nbsp;action="" id="action1" name="action1" method="post">
+
+<select name="select1" id="select1">
+
+<option id="0" value="0" selected="selected">
+
+[ Elige medio de transporte ]
+
+</option>
+
+<option value="auto">
+
+Automóvil
+
+</option>
+
+<option value="moto">
+
+Motocicleta
+
+</option>
+
+</select>
+
+<select name="select2" id="select2">
+
+</select>
+
+<select name="select3" id="select3">
+
+</select>
+
+<input type="button" name="ver" id="boton_ver" value="ok" />
+
+<div id="listar"> <!--div que muestra los datos enviados al hacer click en el botón -->
+
+</div>
+
+</form>
+
+</body>
+</html>

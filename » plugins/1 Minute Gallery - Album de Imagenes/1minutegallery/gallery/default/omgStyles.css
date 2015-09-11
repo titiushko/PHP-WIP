@@ -1,0 +1,228 @@
+/* general styles */
+body {
+	background-color: #d0d0d0;
+	margin: 10px;
+}
+
+div#omgMain {
+	font-family: tahoma, verdana, arial;
+	font-size: 12px;
+	color: black;
+	min-width: 970px;
+}
+
+div.omgClear {
+	clear: both;
+	height: 30px;
+}
+
+/* header and footer */
+div#omgHeader {
+	height: 70px;
+}
+
+div#omgHeader img#logo {
+	float: left;
+}
+
+div#omgHeader h1 {
+	font-size: 28px;
+	margin: 0 0 5px 0;
+	float: right;
+	clear: right;
+}
+
+div#omgHeader h2 {
+	font-size: 24px;
+	float: right;
+	clear: right;
+	margin: 0;
+}
+div#omgHeader h2 a,
+div#omgHeader h2 a:link,
+div#omgHeader h2 a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+div#omgFooter {
+	padding: 10px 0 20px 0;
+	clear: both;
+	text-align: right;
+	font-size: 10px;
+}
+div#omgFooter p {
+	margin: 0;
+}
+
+div#omgFooter a,
+div#omgFooter a:link,
+div#omgFooter a:visited {
+	color: #303030;
+}
+
+/* album view */
+div#omgAlbumTopNav,
+div#omgAlbumBotNav {
+	clear: both;
+	height: 30px;
+	padding: 0 10px 0 10px;
+	background: url('vgrad.gif') repeat-x top;
+	border: 1px solid gray;
+}
+
+div#omgSidebar {
+	float: left;
+	width: 200px;
+	margin: 10px 0 30px 0;
+}
+
+div#omgAlbumDescr {
+	padding: 10px 10px 20px 10px;
+	background-color: #d0d0d0;
+	border: 1px solid gray;
+}
+
+div#omgThumbnails {
+	margin: 0 -10px 0 230px;
+	text-align: center;
+	background: url('mainbg.gif') 100% 100% no-repeat;
+}
+
+div#omgThumbnails table {
+	width: 140px;
+	height: 160px;
+	display: inline;
+	float: left;
+	border: 0;
+	border-collapse: collapse;
+}
+
+div#omgThumbnails table td.im {
+	height: 140px;
+	width: 140px;
+	text-align: center;
+	border: 0;
+	border-collapse: collapse;
+}
+
+div#omgThumbnails table td.im img {
+	border: 1px solid black;
+}
+
+div#omgThumbnails table td.cp {
+	height: 20px;
+	text-align: center;
+	border: 0;
+	border-collapse: collapse;
+}
+
+/* messages */
+div#omgMessages {
+	margin: 10px 10px 10px 0;
+	padding: 10px;
+	border: 1px solid #cccc33;
+	background-color: #ffffcc;
+	text-align: left;
+}
+div#omgMessages ul {
+	margin: 0;
+}
+li.msgerror span {
+	color: red;
+}
+li.msgmessage span {
+	color: green;
+}
+li.msginfo span {
+	color: black;
+}
+
+/* navigation elements */
+div#omgStats {
+	float: left;
+	margin: 8px 0 0 0;
+}
+
+div.omgPageLinks {
+	float: right;
+	margin-top: 4px;
+}
+
+div.omgBack {
+	float: left;
+	margin-top: 4px;
+}
+
+div.omgBack a,
+div.omgBack a:link,
+div.omgBack a:visited,
+div.omgPageLinks a,
+div.omgPageLinks a:link,
+div.omgPageLinks a:visited {
+	font-size: 12px;
+	padding: 3px 5px 4px 5px;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	text-decoration: none;
+	color: black;
+	line-height: 22px;
+	min-width: 30px;
+	background: url('butbg.gif') repeat-x top;
+}
+
+div.omgBack a:hover,
+div.omgPageLinks a:hover {
+	background: url('butbghover.gif') repeat-x top;
+}
+
+span.omgCurrentPage {
+	padding: 3px 5px 4px 5px;
+	background-color: gray;
+	color: white;
+	font-weight: bold;
+	min-width: 22px;
+	line-height: 22px;
+}
+
+/* image view */
+div#omgImageView {
+	margin: 20px -10px 0 140px;
+	text-align: center;
+	background: url('mainbg.gif') 100% 100% no-repeat;
+}
+
+div#omgImageView img.omgSized {
+	border: 1px solid black;
+}
+
+div#omgDescr {
+	padding: 4px;
+	text-align: center;
+}
+
+table#omgPreviews {
+	float: left;
+	width: 140px;
+	margin: 20px 0 30px 0;
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+
+table#omgPreviews td {
+	width: 140px;
+	text-align: center;
+	margin-bottom: 10px;
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+
+table#omgPreviews td#omgCurrent {
+	background-color: #a0a0a0;
+}
+
+table#omgPreviews img {
+	margin: 10px;
+	border: 1px solid black;
+}
+

@@ -1,0 +1,49 @@
+html { height: 100% }
+  body { height: 100%; margin: 0px; padding: 0px }
+  #map { height: 100% }
+  
+  
+#menu {
+width: 170px;
+margin: 50px;
+}
+
+/* Definimos estilo nuestra lista */
+
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+font-family:Verdana,Arial,
+Helvetica, sans-serif;
+font-size:0.8em;
+font-weight: bolder;
+}
+
+/* Ahora las características
+comunes de cada item */
+
+#menu li a {
+text-decoration: none;
+height: 28px;
+display: block;
+padding: 9px 0 0 10px;
+background: url(botones.gif);
+}
+
+/* Ahora las caraterísticas
+especiales */
+
+#menu li a:link, #menu li a:visited {
+color: #777;
+}
+
+#menu li a:hover {
+color: #257EB7;
+background-position: 0 -36px;
+}
+
+#menu li a:active {
+color: #fff;
+background-position:0 -72px;
+}

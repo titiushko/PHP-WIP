@@ -1,0 +1,6 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+18:13:11	73139/73139	---M--	200	added ('OK')	text/html	etag:%2242037-11db3-48ed1e2d8a300%22	http://www.fceia.unr.edu.ar/~hcaste/phpcurso.html	C:/My%20Web%20Sites/PAGINA%20WEB%20DE%20CURSO%20PHP/www.fceia.unr.edu.ar/_hcaste/phpcurso.html	(from )
+18:13:11	278/278	---M--	404	error ('Not%20Found')	text/html	date:Tue,%2008%20May%202012%2000:11:42%20GMT	http://www.fceia.unr.edu.ar/robots.txt		(from )
+18:13:13	407/407	---M--	200	added ('OK')	application/javascript	date:Fri,%2013%20Feb%202009%2014:01:53%20GMT	http://us.i1.yimg.com/us.yimg.com/i/mc/mc.js	C:/My%20Web%20Sites/PAGINA%20WEB%20DE%20CURSO%20PHP/us.i1.yimg.com/us.yimg.com/i/mc/mc.js	(from )
+18:13:13	635/635	---M--	200	added ('OK')	application/x-javascript	date:Mon,%2017%20Jan%202011%2014:22:02%20GMT	http://geocities.com/js_source/geov2.js	C:/My%20Web%20Sites/PAGINA%20WEB%20DE%20CURSO%20PHP/geocities.com/js_source/geov2.js	(from )
+18:13:14	85/85	---M--	200	added ('OK')	image/gif	date:Tue,%2008%20May%202012%2000:11:44%20GMT	http://visit.geocities.yahoo.com/visit.gif?ar1171647478	C:/My%20Web%20Sites/PAGINA%20WEB%20DE%20CURSO%20PHP/visit.geocities.yahoo.com/visita289.gif	(from )

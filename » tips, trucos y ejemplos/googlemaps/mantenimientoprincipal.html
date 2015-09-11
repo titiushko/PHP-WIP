@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+ <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<title>Mapa de El salvador</title>
+<!-- <script src="http://maps.google.com/maps?file=api&amp;v=2&oe=ISO-8859-1;&amp;key=ABQIAAAAqpbXw-BK0W2Npc5wcV1G3BTfLb1qvdVMORKk0L140J8mMNUmrRTnnYBI 7U0NhgzjIMqoOUBL7e624A"
+type="text/javascript"></script> 
+
+<script type="text/javascript">
+  function load() {
+  if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map"));
+        map.addControl(new GSmallMapControl());
+        map.addControl(new GMapTypeControl());
+		map.addControl(new GOverviewMapControl());
+		map.addControl(new GScaleControl());
+        map.setCenter(new GLatLng(14,-89), 9);
+      } 
+	  	  
+  }//fin de la funcion initialize
+</script>
+<script src="http://countrypoints.googlecode.com/files/countrypoints.js" type="text/javascript"></script>-->
+</head>
+<body onload="load()" onunload="GUnload()">
+	<div id="contenedor" style="width:100%; height:100%;">
+	<div id="cabecera" style="background-color: #ffcc99; font-weight:bold; font-size: 110%; height: 23px; padding: 3px; margin-bottom:10px;">SISTEMA GEOGRAFICO DE EL SALVADOR DE LUGARES TURISTICOS</div>
+	<div id="lateral" style="float:right; width:200px; height:100%; background-color:#E4E3E9;">
+		<div id="menu" style="padding: 5px 10px 0 0px;">
+			<ul>
+			<li><a href="../googlemaps/index.html">Inicio</a></li>
+			<li><a href="../googlemaps/sis_GeograMontana.html">Montaña</a></li>
+			<li><a href="../googlemaps/sis_GeograLago.html">Lago</a></li>
+			<li><a href="../googlemaps/sis_playas.html">Playas</a></li>
+			<li><a href="../googlemaps/sis_GeograBalnea.html">Balnearios</a></li>
+			<li><a href="../googlemaps/mantenimientoprincipal.html">Mantenimiento</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="formulario" style="height: 100%; margin-right:205px; background-image:url(fondotabla.png)";>
+  <table width="75%" border="0" cellspacing="3" cellpadding="2" align="center">
+  <caption>
+    SELECCIONA UNA OPCION
+  </caption>
+  <tr>
+    <th scope="col"><a href="ingresardestino.html"><img src="/googlemaps/NUEVO.png" width="300" height="224" alt="Haz click para ingresar un nuevo destino" /></a></th>
+    <th scope="col"><a href="modificardestino.php"><img src="/googlemaps/MODIFICA.png" width="300" height="224" alt="Haz click para modificar un nuevo destino" /></a></th>
+  </tr>
+</table>
+
+    </div>
+</div>
+</body>
+</html>

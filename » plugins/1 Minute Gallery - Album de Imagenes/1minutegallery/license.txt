@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------------
+1 MINUTE GALLERY END USER LICENSE AGREEMENT
+--------------------------------------------------------------------------------
+
+This document contains the End User License Agreement between Softcomplex Inc, herein referred to as "the company", "we", "us", and "our", and the End User (herein referred to as "you", "your", "yours", etc.). By installing and using 1 Minute Gallery (herein referred to as "the software", "gallery", "script"), you are agreeing to these terms and conditions.
+
+I. TERMS AND DEFINITIONS
+
+"foot note" is the part of the gallery pages that displays the product name and the copyright information. The foot note is located at the very bottom of the page and it is defined the footer template.
+
+II. RIGHT TO RUN
+
+The gallery is free for everyone to download, install and test in development environment. In order to deploy the script in production environment, publish it on the publicly accessible website or in any other way make it accessible to the end users your application must qualify for or you must purchase one of the following licenses:
+
+   1. FREE LICENSE - allows to use the unlimited number of copies of the script in personal (non-commercial) websites without paid advertising and websites of officially registered non-profit organizations.
+   2. FOOT NOTE REMOVAL LICENSE - same as license above but with the right to remove the foot note. This type of license is available at a fee.
+   3. COMMERCIAL LICENSE - allows to use the unlimited number of copies of the script in any applications created or managed by the licensee. This license includes the foot note removal rights and it is available at a fee.
+
+All licenses listed above are perpetual and non-exclusive.
+
+III. ALTERATION OF SOURCE CODE
+
+You may modify the software or any portion thereof but excluding the restrictions outlined below:
+
+   1. You may not remove or modify the comments with the product information at the beginning of the main script file
+   2. Unless you purchased the foot note removal license or commercial license you may not remove, change or in any other way prevent the foot note from appearing at the bottom of the gallery pages in its original form
+
+IV. DISCLAIMER OF LIABILITY
+
+SOFTCOMPLEX, INC DISCLAIMS ALL WARRANTIES AND REPRESENTATIONS, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. ALSO, THERE IS NO WARRANTY OF NON-INFRINGEMENT AND TITLE OR QUIET ENJOYMENT. SOFTCOMPLEX, INC DOES NOT WARRANT THAT THE SOFTWARE IS ERROR-FREE OR WILL OPERATE WITHOUT INTERRUPTION. THE SOFTWARE IS NOT DESIGNED, INTENDED OR LICENSED FOR USE IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE CONTROLS, INCLUDING WITHOUT LIMITATION, THE DESIGN, CONSTRUCTION, MAINTENANCE OR OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, AND LIFE SUPPORT OR WEAPONS SYSTEMS. SOFTCOMPLEX, INC SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR SUCH PURPOSES.
+NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY SOFTCOMPLEX, INC LIMITED, ITS DEALERS, DISTRIBUTORS, AGENTS OR EMPLOYEES SHALL CREATE A WARRANTY OR IN ANY WAY INCREASE THE SCOPE OF ANY WARRANTY PROVIDED HEREIN.
+SOFTCOMPLEX, INC SHALL HAVE NO RESPONSIBILITY FOR ANY FAILURE THAT ARISES OUT OF USE OF THE SOFTWARE WITH OTHER THAN A RECOMMENDED HARDWARE CONFIGURATION, PLATFORM OR OPERATING SYSTEM. NEITHER SOFTCOMPLEX, INC NOR ITS SUPPLIERS SHALL BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, COVER OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR THE INABILITY TO USE EQUIPMENT OR ACCESS DATA, LOSS OF BUSINESS, LOSS OF PROFITS, BUSINESS INTERRUPTION OR THE LIKE), ARISING OUT OF THE USE OF, OR INABILITY TO USE, THE SOFTWARE AND BASED ON ANY THEORY OF LIABILITY INCLUDING BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, EVEN IF SOFTCOMPLEX, INC OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.
+
+V. TERMINATION OF LICENSE
+
+Softcomplex, Inc reserves the right to terminate your license if any clause of this agreement is found to have been violated.
+
+VI. ENFORCEABILITY
+
+If any clause of this license agreement is held to be unenforceable, all remaining clauses of this agreement shall remain in force.
+For latest version of this document please visit: http://www.1minutegallery.com/docs/user_agreement.html

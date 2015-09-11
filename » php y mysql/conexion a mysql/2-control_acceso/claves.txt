@@ -1,0 +1,8 @@
+Base de datos: noticias
+
+Tablas: noticias, votos, usuarios
+
+Tabla usuarios
+   Usuario:  user1
+   Clave:    pass1
+

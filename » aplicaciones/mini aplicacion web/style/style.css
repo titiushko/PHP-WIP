@@ -1,0 +1,281 @@
+form {  
+ 
+    margin: 0;  
+    padding: 0;  
+ 
+}  
+ 
+  
+ 
+fieldset {  
+    margin: 1em 0;  
+    border: none;  
+    border-top: 1px solid #ccc;  
+}  
+
+legend {  
+
+    margin: 0;  
+    padding: 0;  
+    color: #000000;
+    background: 0;  
+    font-size: 1.3em;  
+    font-weight: bold;
+	padding: 0;  
+}  
+
+label {  
+ 
+    float: left;  
+    width: 100px;  
+    padding: 0 1em;  
+    text-align: right;  
+    color: #000000;
+}  
+
+
+fieldset div {  
+
+    margin-bottom: .5em;  
+    padding: 0;  
+    display: block;  
+
+}  
+
+fieldset div input, fieldset div textarea {  
+
+    width: 150px;  
+    border-top: 1px solid #555;  
+    border-left: 1px solid #555;  
+    border-bottom: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+    padding: 1px;  
+    color: #333;  
+
+}  
+
+fieldset div select {  
+
+    padding: 1px;  
+
+}  
+div.fm-multi div {  
+
+    margin: 5px 0;  
+
+}  
+div.fm-multi input {  
+
+    width: 1em;  
+
+}  
+div.fm-multi label {  
+
+    display: block;  
+
+    width: 200px;  
+
+    padding-left: 5em;  
+
+    text-align: left;  
+
+}  
+
+  
+
+#fm-submit {  
+
+    clear: both;  
+
+    padding-top: 1em;  
+
+    text-align: left;  
+
+}  
+
+  
+
+#fm-submit input {  
+
+    border: 1px solid #333;  
+
+    padding: 2px 1em;  
+
+    background: #555;  
+
+    color: #fff;  
+
+    font-size: 100%;  
+	
+	  text-align: left; 
+
+}  
+input:focus, textarea:focus {  
+
+    background: #efefef;  
+
+    color: #000;  
+
+}  
+      
+
+/* required fields - does not work in IE */  
+
+fieldset div.fm-req {  
+
+    font-weight: bold;  
+
+}  
+
+  
+
+fieldset div.fm-req label:before {  
+
+    content: ""; /* does not work in IE */  
+
+}  
+
+  
+
+/* Basic page styling, not part of the form example */  
+
+body     {  
+
+    color: #333;
+	padding: 0 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 76%;
+	 BACKGROUND: url(images/background.png); 
+}  
+
+  
+
+#container {  
+
+    margin: 0 auto;  
+
+    padding: 0em;  
+    color: #000000;  
+    width: 350px;  
+
+    text-align: left;  
+
+}  
+p#fm-intro {  
+
+    margin: 0;  
+
+}  
+
+
+
+
+
+
+
+
+FONT {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana,Helvetica
+}
+TD {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana,Helvetica
+}
+BODY {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana,Helvetica
+}
+P {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana,Helvetica
+}
+DIV {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana,Helvetica
+}
+.bodyline {
+	BORDER-RIGHT: #cccccc 4px ridge; BORDER-TOP: #cccccc 4px ridge; BACKGROUND: url(images/bg4.gif) #e5e8ee; BORDER-LEFT: #cccccc 4px ridge; BORDER-BOTTOM: #cccccc 4px ridge
+}
+BODY {
+	/*SCROLLBAR-FACE-COLOR: #dee3e7; BACKGROUND: url(images/bg_cat2.gif) #efefef; FONT: 12px Verdana,Arial,Helvetica,sans-serif; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #dee3e7; COLOR: #003366; SCROLLBAR-3DLIGHT-COLOR: #d1d7dc; SCROLLBAR-ARROW-COLOR: #006699; SCROLLBAR-TRACK-COLOR: #efefef; SCROLLBAR-DARKSHADOW-COLOR: #98aab1*/
+background: url(bg.gif) white;
+
+
+}
+A:link {
+	FONT-SIZE: 10px; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline
+}
+A:active {
+	FONT-SIZE: 10px; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-SIZE: 10px; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline
+}
+A:hover {
+	FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.content {
+	FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica
+}
+.block-title {
+	FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.storytitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.storycat {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline
+}
+.boxtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.boxcontent {
+	FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica
+}
+.option {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.tiny {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.small {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #003366; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+INPUT {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT: 11px Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 1px solid; COLOR: #000000; BORDER-BOTTOM: 1px solid
+}
+TEXTAREA {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT: 11px Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 1px solid; COLOR: #000000; BORDER-BOTTOM: 1px solid
+}
+SELECT {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT: 11px Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 1px solid; COLOR: #000000; BORDER-BOTTOM: 1px solid
+}
+INPUT.post {
+	BACKGROUND: #ffffff
+}
+TEXTAREA.post {
+	BACKGROUND: #ffffff
+}
+SELECT {
+	BACKGROUND: #ffffff
+}
+INPUT {
+	TEXT-INDENT: 2px
+}
+INPUT.button {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BACKGROUND: #efefef; FONT: 11px Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 1px solid; COLOR: #003366; BORDER-BOTTOM: 1px solid
+}
+INPUT.mainoption {
+	FONT-WEIGHT: bold; BACKGROUND: #fafafa
+}
+INPUT.liteoption {
+	FONT-WEIGHT: normal; BACKGROUND: #fafafa
+}
+.code {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; BACKGROUND: #fafafa; FONT: 11px Courier,'Courier New',sans-serif; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #006600; BORDER-BOTTOM: #d1d7dc 1px solid
+}
+.quote {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; BACKGROUND: #fafafa; FONT: 11px/125% Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #444444; BORDER-BOTTOM: #d1d7dc 1px solid
+}
+TABLE.TD {
+	BACKGROUND: #000000;
+}

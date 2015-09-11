@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+
+<html>  
+ 
+<head>  
+ 
+<!---<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />  ---> 
+ 
+<title>Catalogo Usuarios</title>  
+ 
+ <link rel="stylesheet" type="text/css" href="style/style106_right.css" />
+   <link rel="stylesheet" type="text/css" href="style/colour2.css" />
+   <LINK href="style/style.css" type=text/css rel=StyleSheet>
+   <LINK href="style/style1.css" type=text/css rel=StyleSheet>
+    <LINK href="style/stilo.css" type=text/css rel=StyleSheet>
+</head>  
+ 
+<body> 
+<form name="nuevo_empleado" action="" 
+onsubmit="valida_empleado(); return false">
+<input type="hidden" name="opcion" value="1">
+
+<div style="background:url(images/nav2_bg.gif);color:#000000;border:1;"> 
+
+<fieldset class="boxcontent" style="text-align:center;">  
+    <legend style="text-align:center;">Nuevo Empleado</legend>
+	<br>
+    <div class="fm-req">  
+    <label for="nombres">Nombres:</label>  
+ 	<input name="nombres" id="nombres" type="text" />  
+ 	</div>  
+    <div class="fm-opt">  
+	<label for="departamento">Departamento:</label>  
+			<select id="departamento" name="departamento">  
+            <option value="--" selected="selected">Elige el Departamento</option>  
+            <option value="Informatica">Informatica</option>
+            <option value="Contabilidad">Contabilidad</option>
+            <option value="Administracion">Administracion</option>
+            <option value="Logistica">Logistica</option>
+            </select>
+	</div>  
+    <div class="fm-req">  
+    <label for="sueldo">Sueldo:</label>  
+    <input name="sueldo" id="sueldo" type="text" />  
+    </div>  
+	</fieldset>  
+	<div >  
+    <input type="submit" value="Guardar" /> | <input name="cancelar" value="Cancelar" type="button" onClick="Cancelar()" />
+    </div>  
+  <fieldset>  
+</div>
+    <br />  
+  </form>  
+</body>  
+</html>  

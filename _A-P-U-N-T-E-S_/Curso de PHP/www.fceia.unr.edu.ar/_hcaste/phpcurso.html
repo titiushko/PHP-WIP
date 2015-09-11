@@ -1,0 +1,2199 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<!-- Mirrored from www.fceia.unr.edu.ar/~hcaste/phpcurso.html by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 08 May 2012 00:13:11 GMT -->
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.79 [es] (X11; U; Linux 2.4.18-3 i686) [Netscape]">
+   <title> Documentaci&oacute;n de PHP </title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+<!-- following code added by server. PLEASE REMOVE -->
+<!-- preceding code added by server. PLEASE REMOVE -->
+
+<center>
+<h1>
+<font color="#3366FF">Curso de PHP</font></h1></center>
+
+<h1>
+<font color="#3333FF">Indice:</font></h1>
+
+<blockquote><font size=+2><a href="#introduccion">1. Introducci&oacute;n</a></font>
+<br><font size=+2><a href="#instLinux">2. Instalaci&oacute;n de PHP en
+Linux con Apache y MySQL</a></font>
+<br><font size=+2><a href="#instWindows">3. Instalaci&oacute;n de PHP en
+Windows 95/98/NT con Apache y MySQL</a></font>
+<br><font size=+2><a href="#seguridad">4. Seguridad y PHP</a></font>
+<br><font size=+2><a href="#lenguaje">5. Lenguaje PHP</a></font>
+<br><font size=+2><a href="#variables">6. Variables</a></font>
+<br><font size=+2><a href="#constantes">7. Constantes</a></font>
+<br><font size=+2><a href="#expresiones">8. Expresiones y operadores</a></font>
+<br><font size=+2><a href="#estructuras">9. Estructuras de Control</a></font>
+<br><font size=+2><a href="#funciones">10. Funciones</a></font>
+<br><font size=+2><a href="#clases">11. Clases y objetos</a></font>
+<br><font size=+2><a href="#errores">12. Manejo de Errores</a></font>
+<br><font size=+2><a href="#gif">13. Creaci&oacute;n de Im&aacute;genes
+GIF</a></font>
+<br><font size=+2><a href="#autentificacion">14. Problema de la autentificaci&oacute;n
+de un Usuario con PHP</a></font>
+<br><font size=+2><a href="#cookies">15. Cookies</a></font>
+<br><font size=+2><a href="#ficherosRemotos">16. Utilizaci&oacute;n de
+ficheros remotos</a></font>
+<br><font size=+2><a href="#conexiones">17. Manejo de conexiones</a></font>
+<br><font size=+2><a href="#conexionesBD">18. Conexiones a bases de datos</a></font>
+<br><font size=+2><a href="#funcionesPHP">19. Funciones de PHP</a></font>
+<br><font size=+2><a href="#Direcciones">20. Direcciones de Inter&eacute;s</a></font></blockquote>
+<a NAME="introduccion"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+1. Introducci&oacute;n</h1>
+Todos los que nos hemos enfrentado con el dise&ntilde;o de p&aacute;ginas
+Web hemos echado de menos un poco m&aacute;s de dinamismo en ellas.
+<br>Representar una p&aacute;gina repleta de gr&aacute;ficos y nada m&aacute;s,
+deja de ser suficiente para ciertas aplicaciones en Internet. Estas aplicaciones
+requieren de cierta interactividad con el usuario, y han sido muchas las
+tecnolog&iacute;as aplicadas a este fin (formularios, CGI, etc.).
+<p>Ahora est&aacute; disponible la versi&oacute;n 3 de PHP, o la versi&oacute;n
+4 no definitiva, Profesional Home Pages, la soluci&oacute;n para la construcci&oacute;n
+de Webs con independencia de la Base de Datos y del servidor Web, v&aacute;lida
+para cualquier plataforma. El objetivo final es conseguir la integraci&oacute;n
+de las paginas HTML con aplicaciones que corran en el servidor como procesos
+integrados en el mismo, y no como un proceso separado, como ocurr&iacute;a
+con los CGIs. Igualmente interesa que dichas aplicaciones sean totalmente
+independientes del navegador (lo que no ocurr&iacute;a con otros lenguajes
+basados en scripts, como JavaScript o VisualBasic Script), independientes
+de la plataforma y de la Base de Datos.
+<p>Perl ha sido el lenguaje que ha servido como est&aacute;ndar para construir
+CGIs durante mucho tiempo, y a&uacute;n sigue siendo una de las mejores
+soluciones para desarrollar aplicaciones Web portables, ya que trabaja
+sobre cualquier servidor Web que soporte CGIs, y sobre cualquier plataforma
+que soporte Perl, que son la mayor&iacute;a, incluso ha servido para desarrollar
+m&oacute;dulos que extienden la funcionalidad de los servidores. Pero nada
+tiene que envidiar PHP. PHP, est&aacute; m&aacute;s orientado a conexiones
+entre p&aacute;ginas Web y servidores donde se almacenan toda clase de
+Bases de Datos.
+<p>Soporta un &uacute;nico "Safe Mode", es decir, un mecanismo de seguridad
+que permite que varios usuarios est&eacute;n corriendo scripts PHP sobre
+el mismo servidor. Este mecanismo est&aacute; basado en un esquema de permisos
+de ficheros, permitiendo el acceso a aquellos ficheros que son apropiados
+por el mismo identificador de usuario que el del script que est&aacute;
+intentando acceder a ese fichero, o bien cuando el fichero est&aacute;
+en el directorio que es propiedad del mismo identificador de usuario que
+el del script que est&aacute; intentando acceder.
+<p>PHP es un lenguaje de programaci&oacute;n soportado por HTML. La sintaxis
+est&aacute; heredada de C, Java y Perl. Este lenguaje est&aacute; orientado
+para los constructores de p&aacute;ginas Webs, permitiendoles crear p&aacute;ginas
+din&aacute;micamente generadas de forma r&aacute;pida.
+<h2>
+&iquest;Qu&eacute; es PHP?</h2>
+Oficialmente, PHP es un preprocesador de hipertextos, pero qu&eacute; significa?.
+<p>Para ilustrar esto podemos ver un simple ejemplo:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;html>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;head>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title>Example&lt;/title>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/head>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;body>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php echo "Hi, Esto es un Script PHP";?>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/html></pre>
+Esto es muy parecido a cualquier otro Script escrito en Perl o C. El c&oacute;digo
+de PHP est&aacute; incluido en tags especiales "&lt;?,?>".
+<p>Lo que hace diferente a PHP es que el c&oacute;digo que se deba ejecutar
+se ejecuta siempre en el servidor.
+<p>As&iacute;, al ejecutar el script anterior, el cliente recibir&aacute;
+s&oacute;lo los resultados de la ejecuci&oacute;n por lo que es imposible
+para el cliente acceder al c&oacute;digo que gener&oacute; la p&aacute;gina.
+<h2>
+&iquest;Qu&eacute; se puede hacer con PHP?</h2>
+En el nivel m&aacute;s b&aacute;sico PHP es equiparable a un CGI cualquiera.
+La mayor fuerza de PHP es que est&aacute; preparado para soportar accesos
+a muchos tipos de bases de datos como:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>
+<ol>
+<li>
+Adabas D</li>
+
+<li>
+dBase</li>
+
+<li>
+Empress</li>
+
+<li>
+FiclePro</li>
+
+<li>
+informix</li>
+
+<li>
+InterBase</li>
+
+<li>
+Solid</li>
+
+<li>
+Sybase</li>
+
+<li>
+Velocis</li>
+
+<li>
+Unix dbm</li>
+
+<li>
+mSQL</li>
+
+<li>
+MySQL</li>
+
+<li>
+Oracle</li>
+
+<li>
+PosgreSQL</li>
+</ol>
+</blockquote>
+Adem&aacute;s de esto, PHP soporta la utilizaci&oacute;n de otros protocolos
+como IMAP, SNMP, NNTP, POP3 o HTTP a nivel de socket.
+<h2>
+Algo de Historia</h2>
+PHP fue creado por Rasmus Lerdorf a finales de 1994, aunque no hubo una
+versi&oacute;n utilizable por otros usuarios hasta principios de 1995.
+Esta primera versi&oacute;n se llam&oacute;, <i>Personal Home Page Tools</i>.
+<p>Al principio, PHP s&oacute;lo estaba compuesto por algunas macros que
+facilitaban el trabajo a la hora de crear una p&aacute;gina Web. Hacia
+mediados de 1995 se creo el analizador sint&aacute;ctico y se llam&oacute;
+PHP/F1 Versi&oacute;n 2, y s&oacute;lo reconoc&iacute;a el texto HTML y
+algunas directivas de mSQL. A partir de este momento, la contribuci&oacute;n
+al c&oacute;digo fue p&uacute;blica.
+<p>El crecimiento de PHP desde entonces ha sido exponencial, y han surgido
+versiones nuevas como la actual, PHP3 y la incipiente PHP4.
+<p><a NAME="instLinux"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+2. Instalaci&oacute;n de PHP en Linux con Apache y MySQL</h1>
+<a NAME="instWindows"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<p>En este apartado se describe el proceso de instalci&oacute;n de la base
+de datos MySQL, de un servidor web Apache con PHP, en una m&aacute;quina
+con sistema operativo Linux o Unix.
+<p>Lo primero que se debe hacer es conseguir los paquetes necesarios, y
+que mejor para ello que diriguirnos a las p&aacute;ginas web (o cualquiera
+de sus mirros) de los programas en cuesti&oacute;n:
+<ul>
+<li>
+Apache: www.apache.org</li>
+
+<br>apache-1.3.x.tar.gz
+<li>
+MySQL: www.mysql.com</li>
+
+<br>mysql-3_22_22_tar.gz
+<li>
+PHP: www.php.net</li>
+
+<br>php-3.0.x.tar-gz</ul>
+Para poder realizar todo el proceso de instalaci&oacute;n has de tener
+acceso como root a la m&aacute;quina Linux.
+<p>&nbsp;Lo primero que se debe hacer es escoger un directorio de instalaci&oacute;n,
+aunque lo normal ser&iacute;a en /usr/local, /urs/src, o bien en /opt.
+Para el ejemplo se va a seleccionar /usr/local aunque el proceso ser&iacute;a
+id&eacute;ntico para cualquier otro.
+<p>&nbsp;Una vez bajados los paquetes se suponen almacenados en el direcctorio
+/root/install y el primer paso es descomprimir.
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cd /usr/local
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tar zxvf /root/install/apache-1.3.x.tar.gz
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tar zxvf /root/instal/mysql-3.22.x.tar.gz
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tar zxvf /root/instal/php-3.0.x.tar-gz
+
+</pre>
+</blockquote>
+Se crean enlaces sencillos al c&oacute;digo fuente:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ln -s /usr/local/apache-1.3.x&nbsp; /usr/local/apache
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ln -s /usr/local/mysql-3.22.x /usr/local/mysql
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ln -s /usr/local/php-3.0.x /usr/local/php
+
+</pre>
+</blockquote>
+Se preparan los fuentes para la compilaci&oacute;n de Apache:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cd /usr/loca/apache
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./configure --prefix=/usr/local/apache
+
+</pre>
+</blockquote>
+Se compila e instala MySQL:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cd /usr/local/mysql
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./configure --witout-debug --prefix=/usr/local/mysql
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make install
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cp /usr/local/support-files/mysql.server /etc/rc.d/init.d/mysql
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chmod 755 /etc/rc.d/init.d/mysql
+
+</pre>
+</blockquote>
+Se crean las bases de datos del sistema MySQL:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /usr/local/mysql/bin/mysql_install_db
+
+</pre>
+</blockquote>
+Se inicia el servidor MySQL:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /etc/rc.d/init.d/mysql start</pre>
+</blockquote>
+Se asigna Password de administrador de MySQL (root):
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /usr/local/mysql/bin/mysqladmin -u root password "clave"
+
+</pre>
+</blockquote>
+Ahora le toca el turno a la compilaci&oacute;n de PHP como m&oacute;dulo
+de Apache:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cd /usr/local/php
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./configure --with-mysql=/usr/local/mysql \
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --with-apache=/usr/local/apache \
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --enable-track-vars
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make install
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #cp php3.ini-dist /usr/local/lib/php3.ini
+
+</pre>
+</blockquote>
+Compilaci&oacute;n de Apache:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cd /usr/local/apache
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./configure --prefix=/usr/local/apache \
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --activate-module=src/modules/php3/libphp3.a
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # si hemos compilado PHP4 utilizaremos
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #--activate-module=src/modules/php4/libphp4.a
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # quitar los comentarios para habilitar el m&oacute;dulo de proxy
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #--activate-module=src/modules/proxy/libproxy.a
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make install
+
+</pre>
+</blockquote>
+Para definir las extensiones de los scripts PHP, hay que a&ntilde;adir
+las siguientes lineas en el fichero de configuraci&oacute;n de apache (httpd.conf):
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddType application/x-httpd-php3 .php3
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddType application/x-httpd-php3 .php
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddType application/x-httpd-php3 .phtml
+
+</pre>
+</blockquote>
+Ahora ya s&oacute;lo resta arrancar el servidor, copiando primero el script
+de arranque en <i>/etc/rc.d/init.d</i>.
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cp /usr/local/apache/bin/apachecte /etc/rc.d/init.d/apache
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /etc/rc.d/init.d/apache start
+
+</pre>
+</blockquote>
+Para comprobar la instalaci&oacute;n creese un fichero llamado <i>test.php3</i>
+con la siguiente l&iacute;nea:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php phpinfo() ?></pre>
+</blockquote>
+Col&oacute;quelo en el directorio de documentos de Apache y ll&aacute;melo
+desde el navegador. Si todo est&aacute; correcto, aparecer&aacute; una
+p&aacute;gina con informaci&oacute;n general a cerca del entorno de PHP.
+<blockquote><b>NOTA: </b>Esta instalaci&oacute;n es b&aacute;sica, si se
+desea hacer una instalaci&oacute;n m&aacute;s completa ser&aacute; necesario
+acudir a los manuales que figuran al final de este tutorial.</blockquote>
+
+<h1>
+3. Instalaci&oacute;n de PHP en Windows 95/98/NT con Apache y MySQL</h1>
+En este cap&iacute;tulo se describe el proceso de instalci&oacute;n de
+la base de datos MySQL, de un servidor web Apache con PHP, en una m&aacute;quina
+con sistema operativo Windows.
+<p>&nbsp;Lo primero que se debe hacer es conseguir los programas necesarios,
+y que mejor para ello es diriguirse a las p&aacute;ginas web (o cualquiera
+de sus mirros) de los programas en cuesti&oacute;n:
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+Apache: www.apache.org</li>
+
+<br>apache_1_3_x_win32.exe
+<li>
+MySQL: www.mysql.com</li>
+
+<br>mysql-shareware-3.22.34-win.zip
+<li>
+PHP: www.php.net</li>
+
+<br>php-3.0.x-win32.zip</ul>
+<b>NOTA</b>: La versi&oacute;n para sistemas Windows de MySQL no es gratuita.
+Por lo que usaremos la versi&oacute;n shareware que est&aacute; limitada
+a 30 d&iacute;as.
+<p>La instalaci&oacute;n de estos programas es muy f&aacute;cil, PHP y
+MySQL vienen comprimidos en formato ZIP y s&oacute;lo los tenemos que descomprimir
+en una carpeta, mientras que Apache es autoejecutable:
+<blockquote>Descomprimimos PHP en "C:\php3"
+<br>Descomprimimos MySQL en "C:\mysql"
+<br>Hacemos "doble click" en el fichero de Apache y aceptamos el directorio
+de instalaci&oacute;n por defecto "C:\Archivos de Programas\Apache Group\Apache".</blockquote>
+Una vez instalados los programas, s&oacute;los&oacute;lo queda hacer peque&ntilde;os
+ajustes de configuraci&oacute;n:
+<ul>
+<li>
+<b>APACHE</b></li>
+
+<p><br>Editar el fichero de configuraci&oacute;n http.conf que se halla
+en <i>"C:\Archivos de Programas\Apache Group\Apache\conf\"</i>
+<p>Buscar la l&iacute;nea:
+<blockquote>#ServerName new.host.name</blockquote>
+Quitar el comentario (#) y la cambiarla por:
+<blockquote>ServerName http://localhost</blockquote>
+Indicamos el directorio de PHP:
+<blockquote>ScriptAlias /php3 "C:\php3"</blockquote>
+Definir la extensi&oacute;n de los script PHP:
+<blockquote>AddType application/x-httpd-php3 .php3
+<br>AddType application/x-httpd-php3 .php
+<br>AddType application/x-httpd-php3 .phtml</blockquote>
+Y asignar la aplicaci&oacute;n para las extensiones PHP:
+<blockquote>Action application/x-httpd-php3 "/php3/php.exe"</blockquote>
+Por defecto los ficheros que son accesibles desde el navegador se encuentran
+el la carpeta htdocs del directorio de Apache, pero es posible cambiarla:
+<blockquote>DocumentRoot "C:\www" &lt;Directory "C:\www"> ...... &lt;Directory></blockquote>
+
+<li>
+<b>PHP</b></li>
+
+<p><br>Para configurar PHP, primero se debe buscar el fichero <i>php3.ini-dist</i>
+y renombrarlo a <i>php.ini</i>, editarlo y cambiar:
+<p>La expresi&oacute;n "extension_dir" por:
+<blockquote>extension_dir = C:\php3</blockquote>
+Para a&ntilde;adir soporte para MySQL buscar la l&iacute;nea:
+<blockquote>; extension = php3_mysql.dll</blockquote>
+Y cambiarla por:
+<blockquote>extension = php3_mysql.dll</blockquote>
+Copia el fichero <i>php3.ini</i> en "C:\windows\"
+<p>Para la ejecuci&oacute;n de los programas instalados:
+<blockquote>C:\Archivos de Progrmas\Apache Group\Apache\apache.exe
+<br>C:\mysql\bin\mysqld.exe
+<br>#Para la versi&oacute;n shareware
+<br>C:\mysql\bin\mysqld-shareware.exe</blockquote>
+Tambi&eacute;n se puede arrancar el servidor Apache desde el men&uacute;
+de inicio:
+<blockquote>Inicio->Programas->Apache Web Server->Start</blockquote>
+Para comprobar la instalaci&oacute;n creese un fichero llamado <i>test.php3</i>
+con la siguiente l&iacute;nea:
+<blockquote>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php phpinfo() ?></pre>
+</blockquote>
+Col&oacute;quelo en el directorio de documentos de Apache y ll&aacute;melo
+desde el navegador. Si todo est&aacute; correcto, aparecer&aacute; una
+p&aacute;gina con informaci&oacute;n general a cerca del entorno de PHP.
+<blockquote><b>NOTA: </b>Esta instalaci&oacute;n es b&aacute;sica, si se
+desea hacer una instalaci&oacute;n m&aacute;s completa ser&aacute; necesario
+acudir a los manuales que figuran al final de este tutorial.</blockquote>
+<a NAME="seguridad"></a>arriba
+<h1>
+4. Seguridad y PHP</h1>
+PHP es un interprete que puede ser incluido en un servidor Web como un
+m&oacute;dulo o como un CGI binario.
+<br>Con &eacute;l se pueden realizar accesos a ficheros, conexiones de
+red, etc. PHP est&aacute; dise&ntilde;ado para ser m&aacute;s seguro que
+cualquier otro lenguaje de programaci&oacute;n de CGIs, como Perl o C.
+<h2>
+CGI binario</h2>
+Este m&eacute;todo lo que hace es instalar PHP en el directorio <i>cgi-bin</i>.
+Esto permite a PHP reaccionar ante diversos tipos de ataques.
+<p>&nbsp;Por ejemplo, si accedemos al sistema de ficheros mediante la l&iacute;nea:
+<br><i>http://my.host/cgi-bin/php?/etc/passwd</i>
+<p>En http, todo lo que se pase detr&aacute;s del s&iacute;mbolo ? es la
+l&iacute;nea de argumentos que el interfaz CGI interpreta. Curiosamente,
+si a un sistema Linux, le pasas la instrucci&oacute;n /etc/passwd, el sistema
+intenta ejecutar este comando y esto puede ser un fallo en la seguridad.
+<p>Otro posible ataque, intenta acceder a los ficheros del servidor web
+a los que no se debe tener acceso. Para evitar esto, existen opciones de
+configuraci&oacute;n que redirigen todas las peticiones al int&eacute;rprete
+de PHP forzando un chequeo de acceso al fichero que se pide.
+<p>Algunas de estas opciones de seguridad son:
+<blockquote>
+<ul>
+<li>
+Si se activa la opci&oacute;n <i>disable-force-cgi-redirect</i> se obliga
+a que tanto las peticiones del tipo <i>http://my.host.cgi-bin/php/dir/script.php3</i>
+como las peticiones del tipo <i>http://my.host/dir/script.php3</i> sean
+analizadas por el int&eacute;rprete PHP.</li>
+
+<li>
+Otras opciones posibles en la configuraci&oacute;n es combinar la direcctiva
+<i>Action</i> y <i>AddHandler</i> mediante estas opciones se configura
+la redirecci&oacute;n de las llamadas para que sean int&eacute;rpretadas.</li>
+
+<p><br>&nbsp;Esta opci&oacute;n ha sido probada en Apache y a este servidor
+se refiere.
+<br>&nbsp;
+<center>
+<p><i>Action php3-script /cgi-bin/php Addhandler php3-script.php3</i></center>
+
+<li>
+La tercera opci&oacute;n es utilizar las directivas <i>doc_root</i> y <i>user_dir</i>.</li>
+
+<p><br>&nbsp;Estas directivas se utilizan en servidores Web que no disponen
+de la facilidad del redireccionamiento. Supongamos que un script no se
+ejecuta correctamente, en este caso, el c&oacute;digo se muestra en pantalla
+y esto puede violar la propiedad intelectual de ese script.
+<p>&nbsp;Para solucionar esto, se colocan todos los scripts PHP ejecutables
+en un directorio, que indica la directiva <i>doc_root</i> asegurando as&iacute;
+que todo lo que est&eacute; en ese directorio ser&aacute; ejecutado y nunca
+mostrado al usuario.
+<p>&nbsp;Si esta directiva se combina con <i>user_dir</i> se permitir&aacute;
+ejecutar, ante llamadas del tipo:
+<i>http://my.host/~user/doc.php3</i>
+ficheros que est&eacute;n en el directorio que indica <i>user_dir</i> bajo
+el directorio <i>/home/user/</i>.
+<br>&nbsp;
+<br>&nbsp;
+<li>
+Otra pr&aacute;ctica muy segura es mantener la instalaci&oacute;n del int&eacute;rprete
+fuera del arbol web. Si esto es as&iacute;, se deber&aacute;n hacer los
+ficheros php ejecutables, modificando los atributos del fichero y adem&aacute;s
+se deber&aacute; incluir en la primera l&iacute;nea del script la direcci&oacute;n
+del int&eacute;rprete, <i>#!/usr/local/bin/php</i> por ejemplo.</li>
+</ul>
+</blockquote>
+
+<h2>
+M&oacute;dulo</h2>
+En el caso de tener PHP instalado como un m&oacute;dulo del servidor Apache,
+este hereda todas las caracter&iacute;sticas del servidor.Esta opci&oacute;n
+es la menos utilizada.
+<p><a NAME="lenguaje"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+5. Lenguaje PHP</h1>
+
+<h2>
+Bases de la Sintaxis</h2>
+
+<h3>
+Inserci&oacute;n de PHP en HTML</h3>
+
+<blockquote>
+<ul>
+<li>
+&lt;? .... ?> S&oacute;lo si se activa la funci&oacute;n <b>short_tags()</b>
+o la bandera de configuraci&oacute;n <i>short_open_tag.</i></li>
+
+<li>
+&lt;?php .... ?></li>
+
+<li>
+&lt;script languaje="php"> .... &lt;/script></li>
+
+<li>
+&lt;% .... %> S&oacute;lo si se activan los tags para ficheros <i>'asp'</i>
+con la bandera de configuraci&oacute;n <i>asp_tags.</i></li>
+</ul>
+</blockquote>
+
+<h3>
+Separaci&oacute;n de instrucciones</h3>
+Las instrucciones se separan con <i>';'</i>, en el caso de ser la &uacute;ltima
+instrucci&oacute;n no es necesario el punto y coma.
+<h3>
+Comentarios</h3>
+Los comentarios en PHP pueden ser:
+<ul>
+<li>
+Como en C o C++, /*...*/ &oacute; //</li>
+
+<li>
+Otro tipo de comentario de una l&iacute;nea es #, que comentar&aacute;
+la l&iacute;nea en la que aparezca pero s&oacute;lo hasta el tag <i>?></i>
+que cierra el c&oacute;digo php.</li>
+</ul>
+
+<h2>
+Tipos de Datos</h2>
+Los tipos de cada variable en PHP no est&aacute;n tan claros como en C.
+El int&eacute;rprete asigna el tipo de una variable seg&uacute;n el uso
+que se est&eacute; haciendo de ella. Para asignar un tipo fijo a una variable
+se utiliza la funci&oacute;n <b>settype()</b>. Los tipos son:
+<blockquote>
+<ul>
+<li>
+Enteros</li>
+
+<li>
+Flotantes</li>
+
+<li>
+String</li>
+
+<li>
+Arrays</li>
+
+<li>
+Objetos</li>
+
+<li>
+Juggling</li>
+</ul>
+</blockquote>
+Respecto al tipo entero y flotante, no hay mucho que decir, as&iacute;
+que detallaremos s&oacute;lo los tipos String, Arrays, Objetos y Juggling.
+<h3>
+String</h3>
+Las cadenas pueden estar delimitadas por <i>" o '</i>. Si la cadena est&aacute;
+delimitada por comillas dobles, cualquier variable incluida dentro de ella
+ser&aacute; sustituida por su valor. Para especificar el car&aacute;cter
+<i>" </i>se escapar&aacute; con el car&aacute;cter backslash. Otra forma
+de delimitar una cadena es utilizando la sintaxis de documentos "&lt;&lt;&lt;"
+Ejemplo:
+<blockquote>$variable = &lt;&lt;&lt; EOD
+<br>Ejemplo de cadena
+<br>que ocupa
+<br>varias l&iacute;neas
+<br>EOD;</blockquote>
+Esta &uacute;ltima sintaxis s&oacute;lo se puede utilizar con PHP 4. Las
+operaciones con cadenas son exactamente igual que en PERL.
+<h3>
+Arrays</h3>
+Los Arrays en PHP se pueden utlizar tanto como Arrays indexados o como
+Arrays asociativos. Los Arrays de una sola direcci&oacute;n, pueden ser
+tanto escalares como asociativos. En realidad no existen ninguna diferencia
+entre ellos. Las funciones que se utilizan para crear Arrays de este tipo
+son <b>list() </b>o <b>array() </b>. En el caso de que no se especifique
+el indice en un array, el elemento que se asigna se a&ntilde;ade al final.
+<p>Ejemplo:
+<center>
+<p>$a[]="hola"</center>
+
+<p>La instrucci&oacute;n anterior a&ntilde;ade el string <i>hola </i>al
+final del array <i>'a'</i>. Los arrays pueden ser ordenados utilizando
+las siguientes funciones:<b> asort(), arsort(), ksort(), rsort(), sort(),
+uasort(), usort() y uksort() </b>.
+<p>Otras funciones para el manejo de arrays son: <b>count(), next(), prev()
+y each() </b>.
+<p>En PHP, los arrays multidimensionales combinan las propiedades de un
+array unidimensional explicados anteriormente. Los indices de un array
+multidimensional pueden ser tanto num&eacute;ricos como asociativos.
+<p>(Nota: hay que tener cuidado con la sintaxis de los arrays multidimensionales
+asociativos incluidos dentro de una cadena).
+<p>Ejemplo de array multidimensional asociativo:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>$a=array(
+<br>"manzana" => array("color" => "rojo", "tacto" => "suave"),
+<br>"naranja" => array("color" => "naranja", "tacto" => "rugoso"),
+<br>"platano" => array("color" => "amarillo", "tacto" => "suave")
+<br>);</blockquote>
+
+<h3>
+Objetos</h3>
+Para inicializar un objeto se utiliza el m&eacute;todo <i>new </i>, y para
+acceder a cada uno de sus m&eacute;todos se utiliza el operador <i>-> </i>.
+<h3>
+Juggling</h3>
+Una variable en PHP, define su tipo seg&uacute;n el contenido y el contexto
+en el que se utilice, es decir, si se asigna una cadena a una variable,
+el tipo de esa variable ser&aacute; <i>string </i>. Si a esa misma variable
+se el asigna un n&uacute;mero, el tipo cambiar&aacute; a <i>entero </i>.
+Para asegurarte de que una variable es del tipo adecuado se utiliza la
+funci&oacute;n <b>settype() </b>. Para obtener el tipo de una variable
+se utiliza la funci&oacute;n <b>gettype() </b>. Tambi&eacute;n es posible
+utilizar el mecanismo del <i>casting </i>tal y como se utiliza en C.
+<p><a NAME="variables"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+6. Variables</h1>
+Las variables en PHP mantienen una serie de caracteristicas referentes
+a:
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+Conceptos b&aacute;sicos</li>
+
+<li>
+Variables predefinidas</li>
+
+<li>
+&Aacute;mbito de una variable</li>
+
+<li>
+Variables variables</li>
+
+<li>
+Variables Externas a PHP</li>
+</ul>
+
+<h2>
+Conceptos b&aacute;sicos</h2>
+Los conceptos a tener en cuenta en PHP con las variables son los siguientes:
+<ul>
+<li>
+Cualquier nombre de variable est&aacute; precedido por el s&iacute;mbolo
+$.</li>
+
+<li>
+En PHP las variables siempre se asignan por valor, aunque en PHP4 ya existen
+m&eacute;todos para asignaciones por referencia (&amp;).</li>
+</ul>
+
+<h2>
+Variables predefinidas</h2>
+En PHP cada vez que se ejecuta un script, existen variables que se crean
+y que nos pueden informar del entorno en el que se est&aacute; ejecutando
+dicho script.
+<p>Para obtener una lista de todas estas variables predefinidas se puede
+utilizar la funcion <b>phinfo()</b>.
+<p>De todas estas variables, algunas se crean dependiendo del servidor
+que se est&eacute; utilizando y otras son propias de PHP.
+<p>Si se tratara de un servidor Apache, la lista de variables es:
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+GATEWAY_INTERFACE:</li>
+
+<li>
+SERVER_NAME</li>
+
+<li>
+SERVER_SOFTWARE</li>
+
+<li>
+SERVER_PROTOCOL</li>
+
+<li>
+REQUEST_METHOD</li>
+
+<li>
+QUERY_STRING</li>
+
+<li>
+DOCUMENT_ROOT</li>
+
+<li>
+HTTP_ACCEPT</li>
+
+<li>
+HTTP_ACCEPT_CHARSET</li>
+
+<li>
+HTTP_ENCODING</li>
+
+<li>
+HTTP_ACCEPT_LANGUAJE</li>
+
+<li>
+HTTP_CONNECTION</li>
+
+<li>
+HTTP_HOST</li>
+
+<li>
+HTTP_REFERER</li>
+
+<li>
+HTTP_USER_AGENT</li>
+
+<li>
+REMOTE_ADDR</li>
+
+<li>
+REMOTE_PORT</li>
+
+<li>
+SCRIPT_FILENAME</li>
+
+<li>
+SERVER_ADMIN</li>
+
+<li>
+SERVER_PORT</li>
+
+<li>
+SERVER_SIGNATURE</li>
+
+<li>
+PATH_TANSLATED</li>
+
+<li>
+SCRIPT_NAME</li>
+
+<li>
+REQUEST_URL</li>
+</ul>
+
+<p><br>las variables creadas por el propio PHP son:
+<ul>
+<li>
+argv</li>
+
+<li>
+argc</li>
+
+<li>
+PHP_SELF</li>
+
+<li>
+HTTP_COOKIE_VARS</li>
+
+<li>
+HTTP_GET_VARS</li>
+
+<li>
+HTTP_POST_VARS</li>
+</ul>
+
+<h2>
+&Aacute;mbito de una Varible</h2>
+El &aacute;mbito de una variable en PHP es exactamente igual que en C o
+en Perl tomando siempre en cuenta los ficheros incluidos al principio de
+cada programa.
+<h2>
+Varibles variables</h2>
+PHP permite un mecanismo para mantener variables con un nombre no fijo.
+<p>Por ejemplo:
+<p><i>$a = "hola"; $$a = "mundo"; </i>El ejemplo anterior, define dos variables,
+una denominada $a que contiene el valor "hola" y otra que se llama $hola
+que contiene el valor "mundo"
+<p>Para acceder al valor de una variable variable, se accede con:
+<blockquote><i>echo "$a ${$a}"; &oacute; echo "$a ${$a}";</i></blockquote>
+Ambas sentencias provocaran la salida "hola mundo".
+<p>&nbsp;Algo que se debe tener en cuenta cuando se utilizan variables,
+es que hay que resolver la ambiguedad que se crea al utilizar arrays de
+variables de este tipo. Por ejemplo <i>$$a[1]</i> provoca una ambiguedad
+para el int&eacute;rprete, puesto que no sabe si se desea utilizar la variable
+denominada $a[1] o utilizar la variables $a indexandola en su primer valor.
+Para esto se utiliza una sintaxis especial que ser&iacute;a <i>${$a[1]}
+</i>o <i>${$a}[1] </i>seg&uacute;n se desee una opci&oacute;n u otra.
+<br>&nbsp;
+<br>&nbsp;
+<h2>
+Variables extenas a PHP</h2>
+
+<h3>
+Variables de los forms HTML</h3>
+Cuando existe un form en HTML, inmediatamente despu&eacute;s de ser enviado,
+dentro del &aacute;mbito PHP se crean autom&aacute;ticamente una variable
+por cada uno de los objetos que contiene el form.
+<p>&nbsp;Si se activa la directiva <i>&lt;?php_track_vars?></i> o con la
+variable <i>track_vars</i> todo lo enviado por los m&eacute;todos POST
+y GET estar&aacute; en las variables $HTTP_POST_VARS y $HTTP_GET_VARS.
+<br>&nbsp;
+<br>&nbsp;
+<h3>
+Cookies HTML</h3>
+La funci&oacute;n <i>SetCookie()</i> es una funci&oacute;n PHP para asignar
+Cookies a un ordenador cliente. Esta funci&oacute;n se debe llamar siempre
+antes de comenzar a crear la p&aacute;gina puesto que debe formar parte
+de la cabecera de HTML.Cualquier Cookie que se env&iacute;a a un cliente,
+se convierte dentro de PHP en una variable.
+<p>&nbsp;Par a&ntilde;adir valores a una cookie se utilizan los corchetes,
+[], por ejemplo:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>$count++;
+<br>setCookie(&amp;quotcount", $count;, time()+3600);
+<br>SetCookie("Visita[$count]", "$valor",time()+3600);</blockquote>
+Este ejemplo mantiene dos Cookies en el cliente. La primera mantiene el
+contador <i>count</i> y la segunda contiene una lista de los comentarios
+de cada una de las veces que se ha actualizado la cookie, Visita.
+<br>&nbsp;
+<br>&nbsp;
+<h3>
+Variables de entorno</h3>
+Las variables de entorno, tales como $HOME, para entornos Linux, se pueden
+utilizar desde PHP.
+<p><a NAME="constantes"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+7. Constantes</h1>
+Las constantes en PHP tienen que ser definidas por la funci&oacute;n <i>define()</i>
+y adem&aacute;s no pueden ser redefinidas con otro valor.
+<p>&nbsp;Adem&aacute;s, existen una serie de variables predefinidas denominadas:
+<ul>
+<li>
+_FILE_: Fichero que se est&aacute; procesando.</li>
+
+<li>
+_LINE_: L&iacute;nea del fichero que se est&aacute; procesando</li>
+
+<li>
+_PHP_VERSION: Versi&oacute;n de PHP.</li>
+
+<li>
+PHP_OS: Sistema operativo del cliente.</li>
+
+<li>
+TRUE: Verdadero.</li>
+
+<li>
+FALSE: Falso.</li>
+
+<li>
+E_ERROR: Error sin recuperaci&oacute;n.</li>
+
+<li>
+E_WARNING: Error recuperable.</li>
+
+<li>
+E_PARSE: Error no recuperable (sintaxis).</li>
+
+<li>
+E_NOTICE: Puede Tratarse de un error o no. Normalmente permite continuar
+la ejecuci&oacute;n.</li>
+
+<br>Ejemplo:</ul>
+Todas las constantes que empiezan por "E_"se utilizan normalmente con la
+funci&oacute;n <i>error_reporting()</i>.
+<br>&nbsp;
+<center>
+<p>&lt;?php
+<br>define("CONSTANTE", "hello world.");
+<br>echo CONSTANTE;
+<br>?></center>
+
+<p><a NAME="expresiones"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+8. Expresiones y operadores</h1>
+En PHP una expresi&oacute;n es cualquier cosa que pueda contener un valor.
+Las expresiones m&aacute;s simples son las variables y las constantes y
+otras m&aacute;s complicadas ser&aacute;n las funciones, puesto que cada
+funci&oacute;n devuelve un valor al ser invocada, es decir, contiene un
+valor, por lo tanto, es una expresi&oacute;n.
+<p>&nbsp;Todas las expresiones en PHP son exactamente igual que en C. Los
+operadors abreviados, los incrementos, etc, son exactamente iguales. Incluso
+existen otros operadores adicionales como el operador "." que concatena
+valores de variables, o el operador "===" denominado operador de identidad
+que devolver&aacute; verdadero si las expresiones a ambos lados del operador
+contienen el mismo valor y a la vez son del mismo tipo. Por &uacute;ltimo,
+el operador "@" sirve para el control de errores. Para poder ver como funciona
+el operador @, veamos un ejemplo:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>&lt;?php
+<br>$res = @mysql_query("select nombre from clientes")
+<br>or die ("Error en la selecci&oacute;n, '$php_errormsg'");
+<br>?></blockquote>
+Este ejemplo, utiliza el operador @ en la llamada a <i>mysql_query</i>
+y en el caso de dar un error, se salvar&aacute; el mensaje devuelto en
+una variable denominada <i>php_errormsg</i>. Esta variable contendra el
+mensaje de error de cada sentencia y si ocurre otro error posterior, se
+machaca el valor con la nueva cadena.
+<p>&nbsp;PHP mantiene tambi&eacute;n los operadores "'" que sirven para
+ejecutar un comando del sistema tal y como hace la funci&oacute;n <i>system()</i>
+por ejemplo.
+<p>&nbsp;Las diferencias con C son los operadores de referencia, &amp;
+y *, puesto que las operaciones por referencias no existen en PHP&middot;,
+aunque si son posibles en PHP4, y que en PHP existen dos operadores <i>and</i>
+y dos operadores <i>or</i> que son: 'and', '&amp;&amp;' y 'or', '||' respectivamente,
+que se diferencian en la precedencia de cada uno.
+<p>La tabla que nos puede resumir la precedencia de cada uno de los operadores
+es:
+<table BORDER=2 WIDTH="100%" column="2" >
+<tr>
+<td>Asocitividad</td>
+
+<td>Operadores</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>,</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>or</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>xor</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>and</td>
+</tr>
+
+<tr>
+<td>Derecha</td>
+
+<td>print</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>= += -* *= /= .= %= &amp;= |= ^= ~= &lt;&lt;= >>=</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>?:</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>||</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>&amp;&amp;</td>
+</tr>
+
+<tr>
+<td>No posee</td>
+
+<td>== != ===</td>
+</tr>
+
+<tr>
+<td>No posee</td>
+
+<td>&lt; &lt;= > >=</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>>> &lt;&lt;</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>+ - .</td>
+</tr>
+
+<tr>
+<td>Izquierda</td>
+
+<td>* / %</td>
+</tr>
+
+<tr>
+<td>Derecha</td>
+
+<td>! ~ ++ -- (int) (double) (string) (array) (0bject) @</td>
+</tr>
+
+<tr>
+<td>Derecha</td>
+
+<td>[</td>
+</tr>
+
+<tr>
+<td>No posee</td>
+
+<td>new</td>
+</tr>
+</table>
+
+<p><a NAME="estructuras"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+9. Estructuras de Control</h1>
+La mejor forma de resumir cada una de las opciones que ofrece PHP para
+las estructuras de control es mediante una tabla:
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=2 WIDTH="100%" column="2" >
+<tr>
+<td>Estructura</td>
+
+<td>Alternativa</td>
+</tr>
+
+<tr>
+<td>If, if else, if elseif</td>
+
+<td>if: endif;</td>
+</tr>
+
+<tr>
+<td>while</td>
+
+<td>while: endwhile;</td>
+</tr>
+
+<tr>
+<td>for</td>
+
+<td>for: endfor;</td>
+</tr>
+
+<tr>
+<td>do.. while</td>
+
+<td>-</td>
+</tr>
+
+<tr>
+<td>foreach(array as $value)
+<br>foreach(array as $key=>$value)
+<br>(PHP4 y no PHP3)</td>
+
+<td>-</td>
+</tr>
+
+<tr>
+<td>switch</td>
+
+<td>switch: endswitch;</td>
+</tr>
+
+<tr>
+<td>continue</td>
+
+<td>-</td>
+</tr>
+
+<tr>
+<td>break</td>
+
+<td>-</td>
+</tr>
+
+<tr>
+<td>require()(Necesitan estar dentro de tags PHP)</td>
+
+<td>-</td>
+</tr>
+
+<tr>
+<td>include()(Necesitan estar dentro de tags PHP)</td>
+
+<td>-</td>
+</tr>
+</table>
+
+<p>Una nota sobre <b>require()</b> y <b>include()</b>, Si se desea incluir
+un fichero de forma condicional, es mejor utilizar include(), sin embargo,
+si la l&iacute;nea donde est&aacute; una instrucci&oacute;n require() no
+se ejecuta, no se ejecutar&aacute; nada de ese fichero. Adem&aacute;s,
+si en un bucle se ejecutan varias veces una instrucci&oacute;n require(),
+el int&eacute;rprete lo incluir&aacute; una s&oacute;la vez, sin embargo
+si es include(), se incluir&aacute; el fichero cada vez que se ejecute
+la instrucci&oacute;n. Como apunte final, debes saber que en un fichero
+que va a ser requerido, se puede incluir una instrucci&oacute;n <i>return
+</i>al final como si esta instrucci&oacute;n devolviera un valor (s&oacute;lo
+en PHP3), si se trata de include, se puede poner al final del fichero una
+instrucci&oacute;n <i>return </i>tanto en PHP3 como en PHP4, aunque con
+algunas diferencias.
+<p>&nbsp;As&iacute;, require, reemplaza su llamada por el contenido del
+fichero que requiere, e include, incluye y evalua el fichero especificado.
+<p><a NAME="funciones"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+10. Funciones</h1>
+
+<h2>
+Funciones definidas por el usuario</h2>
+Un ejemplo puede ser:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>function foo($arg1, $arg2, ..., $argN)
+<br>{
+<blockquote>echo "Funci&oacute;n ejemplo"
+<br>return $value;</blockquote>
+}</blockquote>
+Dentro de una funci&oacute;n puede aparecer cualquier cosa, incluso otra
+funci&oacute;n o definiciones de clase.
+<p>&nbsp;En PHP3 es necesario que una funci&oacute;n est&eacute; declarada
+antes de ser referenciada, y en PHP4 esto no es necesario.
+<p>&nbsp;No es posible realizar sobrecarga de funciones o n&uacute;mero
+variable de argumentos en PHP3 pero s&iacute; en PHP4, aunque esto se puede
+simular en PHP3 pasando un array de argumentos.
+<p>&nbsp;Respecto al paso de argumentos, son siempre pasados por valor
+y para pasarlos por referencia hay que indicarlo y se puede hacer de dos
+formas diferentes, en la definici&oacute;n de la funci&oacute;n, anteponiendo
+el s&iacute;mbolo &amp; al argumento que corresponda, en este caso la llamada
+ser&aacute; igual que la llamada a una funci&oacute;n normal, o manteniendo
+la definici&oacute;n de la funci&oacute;n normal y anteponer un &amp; delante
+del argumento que corresponda en la llamada a la funci&oacute;n.
+<p>&nbsp;PHP permite el mecanismo de argumentos por defecto. Un ejemplo
+de esta caracteristica es:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>function hacerCafe($tipo="capuchino")
+<br>{
+<blockquote>return "he hecho un caf&eacute; $tipo\n";</blockquote>
+}</blockquote>
+En la llamada a esta funci&oacute;n se obtendr&aacute; una frase u otra
+seg&uacute;n se llame:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>echo hacerCafe(); o echo hacerCafe("expreso");</blockquote>
+En el caso de tratarse de una funci&oacute;n con argumentos por defecto
+y argumentos normales, los argumentos por defecto deber&aacute;n estar
+agrupados al final de la lista de argumentos.
+<p>&nbsp;En PHP4 el n&uacute;mero de argumentos de una funci&oacute;n definida
+por el usuario, puede ser variable, se utilizan las funciones <b>func_num_args(),
+func_get_arg()</b> y <b>func_et_args()</b>.
+<h2>
+Valores devueltos</h2>
+A diferencia de C, PHP puede devolver cualquier n&uacute;mero de valores,
+s&oacute;lo har&aacute; falta recibir estos argumentos de la forma adecuada.
+Ejemplo:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>function numeros() {
+<blockquote>return array(0,1,2);</blockquote>
+}
+<br>list ($cero, $uno, $dos) = numeros();</blockquote>
+
+<h2>
+Funciones Variables</h2>
+Las funciones variables pueden ser una gran y potente herramienta en el
+procesamiento d&iacute;namico de un script. Ejemplo:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>&lt;?php
+<br>funcion foo(){
+<blockquote>echo "En foo()&lt;br>\n"</blockquote>
+}
+<br>function bar ($arg ='')
+<br>{
+<blockquote>echo " bar();
+<br>El argumento ha sido '$arg'.&lt;br>\n"</blockquote>
+}
+<br>$func = 'foo';
+<br>$func();
+<br>$func='bar';
+<br>$func('test');
+<br>?></blockquote>
+<a NAME="clases"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+11. Clases y objetos</h1>
+La sintaxis para definir una clase es la siguiente:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>&lt;?php
+<br>class Carta
+<br>{
+<blockquote>var $items;
+<br>function add_item ($artnr, $num)
+<br>{
+<blockquote>$this->items[$artnr] +=$num;</blockquote>
+}
+<br>function remove_item8$artnr, $num)
+<br>{
+<blockquote>if ($this->$item($artnr, $num)
+<br>{
+<blockquote>$this->items[$artnr] -= $num;
+<br>return true;</blockquote>
+}
+<br>else
+<br>{
+<blockquote>return false;</blockquote>
+}</blockquote>
+}</blockquote>
+}
+<br>?></blockquote>
+El operador <i>new </i>crea una instancia de la clase Carta.
+<blockquote>$carta = new Carta;</blockquote>
+La herencia en PHP se realiza con <i>extends</i>.
+<p>&nbsp;Los constructores de cada clase se llaman autom&aacute;ticamente
+por el operador
+<i>new </i>. El constructor de cada clase debe tomar el
+mismo nombre de la clase y cuando se trata de una clase derivada, hay que
+tener cuidado porque s&oacute;lo se llama autom&aacute;ticamente al constructor
+de dicha clase pero no al constructor de la clase padre.
+<p><a NAME="errores"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+12. Manejo de Errores</h1>
+En PHP hay cuatro tipos de errores:
+<blockquote>
+<ul>
+<li>
+Funciones de Error (1)</li>
+
+<li>
+Warnings (2)</li>
+
+<li>
+Errores Parse (4)</li>
+
+<li>
+Notices (8)</li>
+</ul>
+</blockquote>
+El nivel de error por defecto es 7 (1+2+4), pero esto puede ser modificado
+en el fichero de configuraci&oacute;n <i>php3.ini</i> con la directiva
+<i>error_reporting</i>
+<p>Cualquier expresi&oacute;n en PHP se puede llamar con la "@" al principio
+que invocar&aacute; a la funci&oacute;n de manejo de errores, y si <i>track_errors</i>
+est&aacute; activada, el error podremos encontrarlo en la variable <i>$php_errormsg</i>.
+<p><a NAME="gif"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+13. Creaci&oacute;n de Im&aacute;genes GIF</h1>
+Con PHP tambi&eacute;n es posible generar documentos GIF, aunque es necesario
+compilar con la librer&iacute;a GD.
+<p>Un ejemplo de esta caracter&iacute;stica se muestra en el siguiente
+ejemplo:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>&lt;?php
+<br>Header("Content-type: image/gif");
+<br>$string=implode($argb(" ");
+<br>$im = imagecreateromgif("images/boton1.gif");
+<br>$orange = ImageColorAllocate($im, 220, 210, 60);
+<br>$px = (unagesx($im)-7.5*strlen($string))/2;
+<br>ImageGif($im);
+<br>ImageDestroy($im);
+<br>?></blockquote>
+Este emplo podr&iacute;a ser invocado desde cualquier p&aacute;gina con
+la l&iacute;nea
+<blockquote>&lt;img src="boton1.php3"?text</blockquote>
+Con este m&eacute;todo puedes generar la imagen adecuada din&aacute;micamente.
+El par&aacute;metro
+<i>text</i> nos permitir&aacute; poner el texto que
+deseemos en la imagen que vamos a generar.
+<p><a NAME="autentificacion"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+14. Problema de la autentificaci&oacute;n de un Usuario con PHP</h1>
+Para resolver este problema, se utiliza la funci&oacute;n <i>Header()</i>.
+Esta funci&oacute;n debe ser llamada antes de que se haya producido ninguna
+salida del fichero html que se est&aacute; generando. Esta funci&oacute;n
+env&iacute;a una l&iacute;nea a la cabecera HTML que se est&aacute; generando.
+Y con esta funci&oacute;n es posible enviar un mensaje de "Autentificaci&oacute;n
+Requerida " que forzar&aacute; al usuario a completar los datos solicitados.
+<p>&nbsp;El funcionamiento es muy sencillo. Una vez que el usuario ha completado
+los datos que se le piden, se fuerza una nueva llamada al script con las
+variables <i>$PHP_AUTH_USER</i>, <i>$PHP_AUTH_PW</i> y <i>$PHP_AUTH_TYPE</i>
+que contendr&aacute;n el nombre del usuario, el pasword y el tipo de autentificaci&oacute;n.
+<p>Un ejemplo sencillo es:
+<blockquote>&lt;?php
+<br>if(!isset($PHP_AUTH_USER)){
+<br>Header("WWW-Authenticate: Basic realm=\$quot;mi Realm\"");
+<br>Header("HTTP/1.0 401 Unauthorized")
+<br>echo "TeXto para enviar si se utiliza el bot&oacute;n de Cancelar");
+<br>exit;
+<br>} else{
+<br>echo " Hola $PHP_AUTH_USER &lt;p>";
+<br>echo " Tu contrase&ntilde;a es $PHP_AUTH_PW &lt;p>";
+<br>}
+<br>?></blockquote>
+Hay que tener mucho cuidado con el orden en el que se envian los diferentes
+tipos de cabeceras. Esta cabecera de autentificaci&oacute;n, debe ir siempre
+delante de la del tipo <i>HTTP/1.0 401</i>.
+<p>&nbsp;Otro ejemplo sencillo es:
+<blockquote>&lt;?php
+<br>function autentificacion() {
+<br>Header( "WWW-authenticate: basic realm='Sistema de autentificacion'");
+<br>Header( "HTTP/1.0 401 Unauthorized");
+<br>echo "You must enter a valid login ID and password to access this resource\n";
+<br>exit;
+<br>}
+<br>if(!isset($PHP_AUTH_USER) || ($SeenBefore == 1 &amp;&amp; !strcmp($OldAuth,
+$PHP_AUTH_USER)) ) {
+<br>autentificacion();
+<br>}
+<br>else {
+<br>echo "Welcome: $PHP_AUTH_USER
+<br>";
+<br>echo "Old: $OldAuth";
+<br>echo "&lt;FORM ACTION=\"$PHP_SELF\" METHOD=POST>\n";
+<br>echo "&lt;INPUT TYPE=HIDDEN NAME=\"SeenBefore\" VALUE=\"1\">\n";
+<br>echo "&lt;INPUT TYPE=HIDDEN NAME=\"OldAuth\" VALUE=\"$PHP_AUTH_USER\">\n";
+<br>echo "&lt;INPUT TYPE=Submit VALUE=\"Re Authenticate\">\n";
+<br>echo "&lt;/FORM>\n";
+<br>}
+<br>?></blockquote>
+<font size=-1>Nota: S&oacute;lo vale para PHP como m&oacute;dulo de Apache</font>
+<p><a NAME="cookies"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+15. Cookies</h1>
+Para PHP las cookies son f&aacute;ciles de utilizar. Para esto se utiliza
+la funci&oacute;n <i>setcookie()</i> y al igual que la funci&oacute;n anterior,
+Header, tiene que ser invocada antes de producir ninguna salida.
+<p>La funci&oacute;n posee el siguiente prototipo:
+<center>
+<p>int setcookie(string name, string value, int expire, string path, string
+domain, int secure);</center>
+
+<p>Esta funci&oacute;n define la <i>cookie</i> que se va a enviar y posee
+todos los argumentos opcionales a excepci&oacute;n del nombre, aunque los
+no especificados deben ser indicados "", menos los parametros <i>expire</i>
+que es un entero regular que puede devolver la funci&oacute;n <i>mktime()</i>,
+y secure, que indica si el cookie deberia ser utilizado s&oacute;lo sobre
+conexiones seguras, enteros que deben ser sustituidos por un 0.
+<p>&nbsp;Un ejemplo sencillo podr&iacute;a ser:
+<blockquote>setcookie ("TestCookie", "Valor de Test");
+<br>setcookie ("TestCookie", $value,time()+3600); /* expira en 1 hora*/
+<br>setcookie ("TestCookie", $value,time()+3600, "/~rasmus/", ".utoronto.ca",
+1);</blockquote>
+Para poder ver el contenido de un cookie, podemos utilizar:
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>echo $TestCookie;
+<br>echo $HTTP_COOKIE_VARS["TestCookie"];</blockquote>
+Se pueden utilizar vectores de cookies.
+<blockquote>setcookie ("cookie[three]", "cookiethree");
+<br>setcookie ("cookie[two]", "cookietwo");
+<br>setcookie ("cookie[one]", "cookieone");
+<br>if (isset ($cookie)) {
+<blockquote>while (list ($name, $value) = each ($cookie)) {
+<br>echo "$name == $value
+<br>\n";
+<br>}</blockquote>
+}</blockquote>
+<a NAME="ficherosRemotos"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+16. Utilizaci&oacute;n de ficheros remotos</h1>
+PHP permite la utilizaci&oacute;n de ficheros remotos para realizar alg&uacute;n
+tipo de lectura de ellos. En el caso de querer realizar alg&uacute;n tipo
+de escritura, se debe hacer a trav&eacute;s de un servidor ftp. Un ejemplo
+de ambas cosas se muestra a continuaci&oacute;n.
+<blockquote>&lt;?php
+<br>$file = fopen("http://www.php.net/", "r");
+<br>if (!$file) {
+<blockquote>echo "&lt;p>Unable to open remote file.\n";
+<br>exit;</blockquote>
+}
+<br>while (!feof($file)) {
+<blockquote>$line = fgets($file, 1024);
+<br>/* s&oacute;lo funciona si todo est&aacute; en una l&iacute;nea */
+<br>if (eregi("(.*)", $line, $out)) {
+<blockquote>$title = $out[1];
+<br>break;</blockquote>
+}</blockquote>
+}
+<br>fclose($file);
+<br>?></blockquote>
+<a NAME="conexiones"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+17. Manejo de conexiones</h1>
+En PHP las conexiones que se mantinen pueden tener tres estados, Normal
+(0), Aborted (1) y Timeout (2).
+<p>&nbsp;En un script normal, el estado es <i>NORMAL</i>, cuando el cliente
+desconecta, el estado pasa a ser <i>ABORTED</i> y si el l&iacute;mite impuesto
+por PHP-imposed ha transcurrido, (<i>set_time_limit(), el tiempo por defecto
+es 30 segundos</i>) el estado es <i>TIMEOUT</i>.
+<p>&nbsp;Una funci&oacute;n muy util para estos casos, es <i>connection_status()</i>
+que devuelve el estado de la conexi&oacute;n.
+<p><a NAME="conexionesBD"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+18. Conexiones a bases de datos</h1>
+Las conexiones persistentes son enlaces SQL que no se cierran cuando la
+ejecuci&oacute;n del script termina. El comportamiento de estas conexiones
+es el siguiente.
+<p>&nbsp;Cuando se invoca una conexi&oacute;n de este tipo, PHP comprueba
+si existe una conexi&oacute;n de este mismo tipo o por el contrario, se
+trata de una nueva conexi&oacute;n. En el caso de que exista, se procede
+a su uso, y en el caso de que no exista, la conexi&oacute;n se crea. Dos
+conexiones se consideran iguales cuando est&aacute;n realizadas sobre el
+mismo servidor, con el mismo usuario y la misma contrase&ntilde;a.
+<p>&nbsp;Pero en realidad, estas conexiones permanentes, no proporcionan
+ning&uacute;n tipo de funcionabilidad adicional frente a conexiones temporales,
+debido a la forma en que los servidores Web funcionan.
+<p>&nbsp;A&uacute;n as&iacute; se utilizan debido a la eficiencia, debido
+al tiempo de establecimiento de la conexi&oacute;n, y debido a que si tienes
+una s&oacute;la conexi&oacute;n sobre el servidor, ir&aacute; mucho m&aacute;s
+r&aacute;pido que si tienes 10 conexiones temporales, puesto que la carga
+que soporta es diferente.
+<p><a NAME="funcionesPHP"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+19. Funciones de PHP</h1>
+
+<h2>
+MySql</h2>
+La lista de funciones disponibles es la siguiente:
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_affected_rows</font></font></b>:
+Otiene el n&uacute;mero de tuplas modificadas en la &uacute;ltima operacion
+MySql.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_affected_rows(int [identificador de link])</b></center>
+Devuelve el n&uacute;mero de l&iacute;neas afectadas por la &uacute;ltima
+operaci&oacute;n, INSERT, UPDATE o DELETE, asociadas con el identificador
+que se especifica.
+<p>&nbsp;Si no se especifica el link, se asume que se refiere al &uacute;ltimo.
+<p>&nbsp;Excepci&oacute;n: Si la &uacute;ltima operaci&oacute;n ha borrado
+todos los registros de una tabla, esta funci&oacute;n devuelve 0.
+<p>Esta funci&oacute;n no tiene efecto con ninguna operaci&oacute;n SELECT,
+puesto que no modifican ninguna l&iacute;nea.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_change_user</font></font></b>:
+Modifica el usuario responsable de las operaciones.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_change_user(string user, string password, string[database],
+int [identificador de link]</b></center>
+
+<p>Los par&aacute;metros database y link son opcionales.
+<p>&nbsp;Si la nueva combinaci&oacute;n de usuario y password no es correcta,
+seguir&aacute; activa la actual.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_close</font></font></b>: Cierra
+la conexi&oacute;n MySql.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_close(int [identificador de link]</b></center>
+
+<p>Esta funci&oacute;n cierra la conexi&oacute;n permanente que mantiene
+el link. El par&aacute;metro es opcional. Si no se especifica, se cerrar&aacute;
+la &uacute;ltima conexi&oacute;n abierta.
+<p>Si una conexi&oacute;n no se cierra, el script la cierra autom&aacute;ticamente
+al terminar su ejecuci&oacute;n.
+<p>Esta funci&oacute;n no opera correctamente con las conexiones abiertas
+con la funci&oacute;n <i>mysql_pconnect()</i>.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_connect</font></font></b>:
+Open a connection to a MySQL Server.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_connect(string[hostname [:port][:/path/to/socket]],
+string[username],string [password])</b></center>
+
+<p>Esta funci&oacute;n establece una conexi&oacute;n a un servidor mysql.
+Todos los argumentos son opcionales y los valores por defecto son <i>localhost</i>,
+<i>el usuario due&ntilde;o del proceso</i>, <i>sin password</i>.
+<p>Si realizas dos veces una llamada a esta funci&oacute;n con los mismos
+par&aacute;metros, devuelve el mismo identificador que para la llamada
+anterior.
+<p>&nbsp;Todas las conexiones terminan al terminar la ejecuci&oacute;n
+del script, a no ser que se elimine la conexi&oacute;n llamando a la funci&oacute;n
+<i>mysql_close()</i>.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_create_db</font></font></b>:
+Crea una base de datos en el gestor de Bases de Datos.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_create_db(string databaseName, int [identificador
+del link])</b></center>
+
+<p>Esta funci&oacute;n crea una nueva base de datos asociada al link especificado.
+<p>&nbsp;Para mantener la coherencia con otras versiones, se utiliza mysql_createdb()</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_data_seek</font></font></b>:
+Realiza un movimiento en el puntero de los datos resultado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_data_seek(int result_identifier, int row_number)</b></center>
+
+<p>Esta funci&oacute;n permite que el puntero a los resultados apunte a
+la l&iacute;nea especificada.
+<p>&nbsp;El n&uacute;mero de l&iacute;neas comienza en 0.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_db_query</font></font></b>:
+Realiza una consulta a una base de datos.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_db_query(string database, string query, int [identificador
+del link]</b></center>
+
+<p>Selecciona la base de datos <i>database</i> y ejecuta una consulta.
+Si no se especifica el link, utiliza el &uacute;ltimo abierto, si no existe,
+intenta optener uno llamando internamente a la funci&oacute;n <i>mysql_connect()</i>
+sin argumentos.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_drop_db</font></font></b>:
+Realiza una operaci&oacute;n <i>Drop</i> sobre una base de datos.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_drop_db(string database_name, int [identificador del
+link])</b></center>
+
+<p>Devuelve True o False seg&uacute;n haya o no tenido &eacute;xito.
+<p>&nbsp;Nota: Cuidado, seg&uacute;n la versi&oacute;n de MySql, borra
+toda la base de datos a&uacute;n conteniendo tablas con datos.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_errno</font></font></b>: Devuelve
+un c&oacute;digo de error relacionado con la &uacute;ltima operaci&oacute;n
+MySql realizada.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_errno(int [identificador del link]</b></center>
+
+<p>Esta funci&oacute;n devuelve el n&uacute;mero del c&oacute;digo de error
+que devuelve el servidor MySql.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_error</font></font></b>: Devuelve
+el mensaje de error asociado a un c&oacute;digo concreto relacionado con
+la &uacute;ltima operaci&oacute;n MySql realizada.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>string mysql_error(int [identificador del link]</b></center>
+Devuelve la cadena asociada a un error que posee el identificador de conexi&oacute;n
+que se especifica.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_fetch_array</font></font></b>:
+Introduce el resultado en un array asociativo.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>array mysql_fetch_array(int result, int [result type])</b></center>
+
+<p>Esta funci&oacute;n es una versi&oacute;n extendida de <b>mysql_fetch_row()</b>.
+Lo que hace es almacenar el resultado en un array indexado, almacenando
+as&iacute; los datos en un &iacute;ndice asociativo utilizando los nombres
+de los campos como claves.
+<p>&nbsp;Si existen m&aacute;s de una columna con el mismo nombre, tendr&aacute;
+precedencia la &uacute;ltima columna. Para acceder a lal otras columnas
+con el mismo nombre, se debe indexar la columna o hacerun alias para ella.
+<p>&nbsp;Ejemplo:
+<br>&nbsp;
+<center>
+<p>select tabla1.precio as precio 1, tabla2.precio as precio2 from tabla1,
+tabla2</center>
+
+<p>El segundo argumento, es una constante que puede tomar los siguientes
+valores.
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+MYSQL_ASSOC</li>
+
+<li>
+MYSQL_NUM</li>
+
+<li>
+MYSQL_BOTH</li>
+</ul>
+</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_fetch_field</font></font></b>:
+Devuelve un objeto con la informaci&oacute;n de un resultado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>object mysql_fetch_field(int result, int [field_offset])</b></center>
+
+<p>Devuelve un objeto con la informaci&oacute;n que contiene <i>result</i>
+Puede utilizarse par obtener informaci&oacute;n de los campos de ciertas
+consultas. Si el campo del desplazamiento no est&aacute; especificado,
+se selecciona el siguiente dato que no haya sido ya asignado mediante esta
+funci&oacute;n.
+<p>&nbsp;Las propiedades del objeto son:
+<ul>
+<li>
+name: Nombre del campo</li>
+
+<li>
+table: Nombre de la tabla a la que pertenece el campo.</li>
+
+<li>
+max_length: Longitud m&aacute;xima.</li>
+
+<li>
+not_null: Ser&aacute; verdadero si el campo poosee esta propiedad.</li>
+
+<li>
+primary_key: Verdadero si el campo es la clave principal.</li>
+
+<li>
+unique_key: Verdadero si el campo es clave &uacute;nica.</li>
+
+<li>
+multiple_key: Verdadero si el campo no es clave &uacute;nica.</li>
+
+<li>
+numeric: Verdadero si se trata de un campo num&eacute;rico.</li>
+
+<li>
+blob: Verdadero si la columna es a BLOB.</li>
+
+<li>
+type: Tipo de la columna.</li>
+
+<li>
+unsigned: Verdadero si se trata de un dato sin signo.</li>
+
+<li>
+zerofill: Verdadero si la columna tiene la propiedad <i>zerofill</i>.</li>
+</ul>
+</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_fetch_lengths</font></font></b>:
+Obtener la longitud de los resultados.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>array mysql_fetch_lengths(int result)</b></center>
+
+<p>Devuelve un array que contiene las longitudes de todos los campos que
+forman el &uacute;ltimo registro asignado con la funci&oacute;n <i>mysql_fetch_row(),
+mysql_fetch_array()</i> o <i>mysql_fetch_object()</i>.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_fetch_object</font></font></b>:
+Devuelve el resultado como un objeto.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>object mysql_fetch_object(int result, int [result_type])</b></center>
+
+<p>Devuelve un objeto con las propiedades del &uacute;ltimo registro extraido
+de un resultado.
+<p>&nbsp;Esta funci&oacute;n es igual que <i>mysql_fetch_array()</i> con
+la diferencia de que se obtiene un objeto en vez de un array.
+<p>&nbsp;El segundo argumento, es una constante que puede tomar los siguientes
+valores.
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+MYSQL_ASSOC</li>
+
+<li>
+MYSQL_NUM</li>
+
+<li>
+MYSQL_BOTH</li>
+</ul>
+</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_fetch_row</font></font></b>:
+Devuelve el resultado como un array.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>array mysql_fetch_row(int result)</b></center>
+
+<p>Devuelve un array con un registro del resultado o false en el caso de
+que no existan registros.
+<p>&nbsp;Si se llama dos veces a esta funci&oacute;n, &eacute;l asignar&aacute;
+el primer registro del resultado la primera vez y el segundo registro del
+resultado la segunda vez.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_field_name</font></font></b>:
+Devuelve el nombre de un campo especificado en un resultado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>string mysql_field_name(int result, int field_index)</b></center>
+
+<p>Devuelve el nombre del campo que se especifica, mediante el orden que
+ocupe dentro del resultado.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_field_seek</font></font></b>:
+Asigna el puntero de los resultados a una posici&oacute;n determinada.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_field_seek(int result, int field_offset)</b></center>
+
+<p>Busca el desplazamiento que se especifica en el segundo argumento, dentro
+del resultado.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_field_table</font></font></b>:
+Obtiene el nombre de la tabla de un campo especificado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>string mysql_field_table(int result, int field_offset)</b></center>
+</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_field_type</font></font></b>:
+Obtiene el tipo de un campo especificado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<br>&nbsp;
+<p>Obtiene el nombre de la tabla para el campo que se indica en el desplazamiento.
+<br>&nbsp;
+<br>&nbsp;
+<blockquote>
+<center><b>string mysql_field_type(int result, int field_offset)</b></center>
+
+<p>Se devuelve el tipo del campo que se indica mediante el desplazamiento.
+<p>&nbsp;Las cadenas que devuelve pueden ser:
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+int</li>
+
+<li>
+real</li>
+
+<li>
+string</li>
+
+<li>
+blob</li>
+
+<li>
+Otros tipos detallados en la documentaci&oacute;n de MySql.</li>
+</ul>
+</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_field_flags</font></font></b>:
+Obtiene los "Flags" asociados del campo especificado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>string mysql_field_flags(int result, int field_offset)</b></center>
+
+<p>Devuelve una cadena con las propiedades del campo separadas por un espacio.
+Para partir esa cadena se puede utilizar la funci&oacute;n <i>explode()</i>
+<p>Las palabras que puede devolver son:
+<br>&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+not_null</li>
+
+<li>
+primary_key</li>
+
+<li>
+unique_key</li>
+
+<li>
+multiple_key</li>
+
+<li>
+blob</li>
+
+<li>
+unsigned</li>
+
+<li>
+zerofill</li>
+
+<li>
+binary</li>
+
+<li>
+enum</li>
+
+<li>
+auto_increment</li>
+
+<li>
+timestamp</li>
+</ul>
+</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_field_len</font></font></b>:
+Obtiene las longitud de un campo especificado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_field_len(int result, int field_offset)</b></center>
+
+<p>Devuelve la longitud del campo especificado.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_free_result</font></font></b>:
+Libera la memoria de los resultados.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_free_result(int result)</b></center>
+
+<p>Libera la memoria que utiliza el par&aacute;metro.</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_insert_id</font></font></b>:
+Obtiene el identificador de la &uacute;ltima operaci&oacute;n INSERT.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_insert_id(int [link_identifier] )</b></center>
+
+<p>Devuelve el ID generado para un campo AUTO_INCREMENTED. Devolver&aacute;
+el id autogenerado devuelto por la &uacute;ltima operaci&oacute;n INSERT
+del enlace que se especifica como argumento.
+<p>Si el identificador no se especifica, se utiliza la &uacute;ltima conexi&oacute;n
+abierta.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_list_fields</font></font></b>:
+Lista los campos resultado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_list_fields(string database_name, string table_name,
+int [link_identifier]</b></center>
+
+<p>Devuelve informaci&oacute;n del nombre de la tabla que se proporciona.
+El puntero que devuelve, puede ser utilizado con las funciones <i>mysql_field_flags(),
+mysql_field_len(), mysql_field_name() </i>y <i>mysql_field_type()</i>.
+<p>&nbsp;El resultado es un entero positivo, s&oacute;lo devuelve <i>-1</i>
+en caso de que exista alg&uacute;n error.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_list_dbs</font></font></b>:
+Lista las bases de datos disponibles en el servidor MySQL.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_list_dbs(int [link_identifier] )</b></center>
+
+<p>Devuelve un puntero que contiene la lista de bases de datos disponibles
+en ese servidor MySql.
+<p>&nbsp;Con la informaci&oacute;n que devuelve, puede llamarse a la funci&oacute;n
+<i>mysql_tablaname()</i>.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_list_tables</font></font></b>:
+Lista las tablas de una base de datos MySql.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_list_tables(string database, int [link_identifier]
+)</b></center>
+
+<p>Extrae un putero a la lista de tablas que est&aacute;n en una base de
+datos.
+<p>&nbsp;Para extraer el nombre de las tablas se puede posteriormente utilizar
+<i>mysql_db_query()</i> o <i>mysql_tablename()</i>.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_num_fields</font></font></b>:
+Otiene el n&uacute;mero de campos del resultado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_num_fields(int result);</b></center>
+
+<p>Devuelve el n&uacute;mero de campos que contiene el par&aacute;metro
+resultado.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_num_rows</font></font></b>:
+Obtiene el n&uacute;mero de l&iacute;neas del resultado.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_num_rows(int result)</b></center>
+
+<p>Devuelve el n&uacute;mero de l&iacute;neas que contiene el par&aacute;metro
+resultado.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_pconnect</font></font></b>:
+Abre una conexi&oacute;n permanente con una base de datos.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_pconnect(string [hostname [:port] [:/path/to/socket]
+] , string [username] , string [password] )</b></center>
+
+<p>Devuelve una conexi&oacute;n persistente a un servidor MySql.
+<p>&nbsp;Todos los argumentos son opcionales y sus valores son los mismos
+que para la funci&oacute;n
+<i>mysql_connect()</i>.
+<p>&nbsp;Esta funci&oacute;n primero, intenta encontrar una conexi&oacute;n
+ya existente, si la encuentra, devuelve un identificador para ella, y en
+el caso de que no la encuentre, abre una nueva conexi&oacute;n permanente.
+<p>&nbsp;Despues de esto, mantiene la conexi&oacute;n hasta que finaliza
+la ejecuci&oacute;n del script.
+<p>&nbsp;Hay que tener cuidado, porque <i>mysql_close()</i> no cierra conexiones
+abiertas con esta funci&oacute;n.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_query</font></font></b>: Envia
+una consulta SQL a MySQL.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_query(string query, int [identificador del link] )</b></center>
+
+<p>Env&iacute;a una consulta a una base de datos activa en el servidor
+asociado al link que se especifica. En el caso de que no se especifique
+ninguna conexi&oacute;n abierta, la funci&oacute;n intenta reestablecer
+una conexi&oacute;n con la funci&oacute;n <i>mysql_connect()</i>.
+<p>&nbsp;La cadena de la consulta, debe terminar con <i>;</i>.
+<p>&nbsp;La funci&oacute;n devuelve TRUE o FALSE si la consulta tiene &eacute;xito.
+Si el valor devuelto es TRUE, significa que la consulta puede ser realizada,
+no que existan datos que respondan a esa consulta.
+<p>&nbsp;Para consultar cuantas l&iacute;neas responden a esa consulta,
+se puede utilizar la funci&oacute;n <i>mysql_affecter_rows()</i> y nos
+dir&aacute; cuantas l&iacute;neas se han visto afectadas por la &uacute;ltima
+operaci&oacute;n <i>INSERT, DELETE, REPLACE </i>o <i>UPDATE</i>. En el
+caso de tratarse de una operaci&oacute;n <i>SELECT</i> la funci&oacute;n
+<i>mysql_query()</i> devuelve un identificador de resultado que se puede
+utilizar con la funci&oacute;n <i>mysql_result()</i>.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_result</font></font></b>:
+Obtiene los datos resultados.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_result(int result, int row, mixed [field] )</b></center>
+
+<p>Devuelve el contenido de una celda de la tabla din&aacute;mica que devuelve
+MySql como resultado de una operaci&oacute;n previa.
+<p>&nbsp;El &uacute;ltimo argumento es opcional y puede contener el desplazamiento
+del campo que se desea obtener, el nombre del campo o algo como <i>tabla.campo</i>
+o el alias del campo que se desee consultar si se establecio previamente.
+<p>&nbsp;Cuando se trabaja con amplios conjuntos de resultados, es mejor
+utilizar alguna de las funciones que extraen un registro de esa consulta.
+<p>&nbsp;Hay que tener cuidado de no hacer llamadas a funciones que obtienen
+resultados de <i>result</i> junto con esta funci&oacute;n, puesto que el
+puntero que va leyendo de los resultados, puede perderse.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_select_db</font></font></b>:
+Selecciona una base de datos MySql.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>int mysql_select_db(string database_name, int [identificador
+del link] )</b></center>
+
+<p>Esta funci&oacute;n asigna la base de datos activa en el servidor asociado
+al identificador del link.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+<li>
+<b><font color="#9400D3"><font size=+2>mysql_tablename</font></font></b>:
+Obtiene el nombre de la tabla de un campo.</li>
+
+<br>&nbsp;
+<p>&nbsp;
+<blockquote>
+<center><b>string mysql_tablename(int result, int i)</b></center>
+
+<p>Esta funci&oacute;n devuelve el nombre de una tabla de un puntero de
+resultados que ha devuelto previamente la funci&oacute;n <i>mysql_num_rows</i>.
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+</ul>
+
+<h2>
+Postgress</h2>
+La lista de funciones para Postgress y para cualquier otro servidor podeis
+encontrarla en el manual de PHP.<a NAME="direcciones"></a>
+<div align=right>
+<p><a href="#arriba">arriba</a></div>
+
+<h1>
+20. Direcciones de Inter&eacute;s</h1>
+Algunas Direcciones Interesantes son:
+<ul>
+<li>
+<a href="http://w3.one.net/~jhoffman/sqltut.htm">http://w3.one.net/&amp;tilde;jhoffman/sqltut.htm</a></li>
+
+<li>
+<a href="http://www.php.net/">http://www.php.net</a></li>
+
+<li>
+<a href="http://www.vtwebwizard.com/tutorials/mysql">http://www.wtwebwizard.com/tutorials/mysql</a></li>
+
+<li>
+<a href="http://www.otri.us.es/php-mysql/manual/manual_pag_01.htm">http://www.otri.us.es/php-mysql/manual/manual_pag_01.htm</a></li>
+
+<li>
+<a href="http://www.programacion.net/cursos/php/mysql.htm">http://www.programacion.net/cursos/php/mysql.htm</a></li>
+
+<li>
+<a href="http://www.programacion.net/cursos/php/access.htm">http://www.programacion.net/cursos/php/access.htm</a></li>
+
+<li>
+<a href="http://www.epsilon-eridani.com/PHPdoc/doc/disenoweb/php/mysql/multimedia.html">http://www.epsilon-eridani.com/PHPdoc/doc/disenoweb/php/mysql/multimedia.html</a></li>
+
+<li>
+<a href="http://www.pageimpact.com/soporte_online/php.php3">http://www.pageimpact.com/soporte_online/php.php3</a></li>
+
+<li>
+<a href="http://www.angelfire.com/al/acs/bd.html">http://www.angelfire.com/al/acs/bd.html</a></li>
+
+<li>
+<a href="http://www.find-script.com/scripts/PHP3">http://www.find-script.com/scripts/PHP3/</a></li>
+</ul>
+<a href="#arriba">arriba.</a>
+<br><a href="#arriba"></a>&nbsp;</ul>
+
+</body>
+
+<!-- Mirrored from www.fceia.unr.edu.ar/~hcaste/phpcurso.html by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 08 May 2012 00:13:11 GMT -->
+</html>
+<!-- text below generated by server. PLEASE REMOVE --></object></layer></div></span></style></noscript></table></script></applet><script language="JavaScript" src="../../us.i1.yimg.com/us.yimg.com/i/mc/mc.js"></script><script language="JavaScript" src="../../geocities.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="../../visit.geocities.yahoo.com/visita289.gif?ar1171647478" alt="setstats" border="0" width="1" height="1"></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=382031084&amp;t=1171647478&amp;f=ar-w61" ALT=1 WIDTH=1 HEIGHT=1>

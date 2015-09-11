@@ -1,0 +1,523 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
+    font-size:62.5%;
+    background:#fff;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+p{
+	margin:1.5em 0;
+}
+
+a{
+	color:#0247c6;
+}
+
+a:hover{
+	color:#434343;
+	text-decoration:none;
+}
+
+em{
+	font-weight:bold;
+}
+
+/*
+Estructura general del documento
+*/
+#contenedor{
+	width:90%;
+	margin:0 auto;
+	overflow:visible;
+	position:relative;
+}
+
+#cuerpo { 
+	margin:20px 0;
+	padding: 20px 10px;
+	text-align: left;
+	font-size: 1.3em;
+	float: left;
+	width:100%;
+	border:1px solid #ccc;
+}
+
+#cuerpo h2{
+	border-bottom: .5em solid #f0f8ff;
+	color: #333;
+	font: normal 30px/5px serif;
+	margin: 10px 10px;
+}
+
+#columna { 
+	width: 200px;
+	float: right;
+	display: block;
+	position: relative;
+}
+
+#columna p{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#contenido { 
+	position: relative;
+	margin-right: 220px;
+	display: block;
+	top: 0px;
+}
+/*
+Cabecera y Menu
+*/
+#cabecera{
+	width:100%;
+	background:#464646;
+	padding:15px 0;
+}
+
+#cabecera h1{
+	font-size:2em;
+	color:#808080;
+	padding-left:1em;
+}
+
+ul#menu{
+	background: #e4f2fd;
+	margin:0;
+	border-bottom:1px solid #cfe0ed;
+	padding:5px 0 0 5em;
+}
+
+ul#menu .current {
+	font-weight: bold;
+}
+
+ul#menu a {
+	color: #000;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 4px 15px;
+	text-decoration: none;
+}
+
+ul#menu a.current{
+	background: #fff;
+	color: #e27439;
+	text-decoration: none;
+	border:1px solid #cfe0ed;
+	border-bottom:0px;
+}
+
+ul#menu a:hover{
+	color: #e27439;
+}
+
+ul#menu li {
+	display: inline;
+	line-height: 200%;
+	list-style: none;
+	text-align: center;
+}
+
+
+
+
+
+ul#submenu{
+	margin:0;
+	padding:.3em;
+	padding-left:5em;
+}
+
+ul#submenu .current {
+	color:#eaa27f;
+	font-weight:bold;
+}
+
+ul#submenu a {
+	color: #000;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	padding: 4px 15px;
+	text-decoration: none;
+}
+
+ul#submenu a:hover{
+	color: #eaa27f;
+	text-decoration: none;
+}
+
+ul#submenu li {
+	display: inline;
+	line-height: 200%;
+	list-style: none;
+	text-align: center;
+}
+
+/*
+Tablas
+*/
+
+table.listar{
+	margin:10px auto 30px;
+	width:90%;
+	background:#fcfdff;
+	text-align:left;
+	font-size:.9em;
+	padding:0;
+	border:0;
+}
+
+table.listar th, table.listar td{
+	padding:5px;
+}
+
+table.listar caption{
+	font-size:1.2em;
+	font-weight:bold;
+	border-bottom:1px solid #464646;
+	margin:20px auto 0;
+	color:#5c5c5c;
+	line-height:30px;
+}
+
+
+table.listar thead{
+	background:#464646;
+	color:#b1b1a7;
+	line-height:30px;
+}
+
+table.listar tbody td{
+	border-bottom:1px solid #e1e1e1;
+	height:40px;
+}
+
+
+
+table.resultados{
+	width:75%;
+	text-align:center;
+	margin: 10px auto 30px;
+	border:1px solid #404040;
+	padding:10px;
+}
+
+table.resultados caption{
+	margin: 20px auto 0;
+	font-size:1.1em;
+	font-weight:bold;
+	background:#f0f8ff;
+}
+
+table.resultados a{
+	color:#444;
+	text-decoration:none;
+}
+
+table.resultados a:hover{
+	text-decoration:underline;
+	color:#1e4dff;
+}
+
+table.resultados tr:hover{
+	background:#eef;
+}
+
+
+input, textarea, select{
+	width:40em;
+	background: #f4f4f4;
+	border: 1px solid #b2b2b2;
+	color: #000;
+	font:  13px Verdana, Arial, Helvetica, sans-serif;
+	margin: .5em 0;
+	padding: 3px;
+}
+
+
+select{
+	width:15em;
+}
+
+#columna textarea, #columna input, #columna select {
+	width:12em;
+}
+
+input.boton, #columna input.boton{
+	width:8em;
+	display:block;
+}
+
+textarea{
+	width:90%;
+	height:10em;
+}
+
+input:hover{
+	background:#fff;
+}
+
+input:focus{
+	background:#fff;
+}
+
+#columna legend{
+	color:#000000;
+	padding:0 5px;
+}
+
+fieldset{
+	padding:5px;
+	margin-bottom:50px;
+}
+
+label {
+	display:block;
+	margin:20px 0 5px;
+}
+
+#columna label{
+	display:block;
+	padding:.5em 0;
+}
+
+#frmbusqueda{
+	width:200px;
+}
+
+#frm_nueva_categoria{
+	width:200px;
+	margin:20px 0 0 0;
+}
+
+#iupload{
+	border-style: none;
+	padding: 0px;
+	height: 25em;
+	width: 100%;
+}
+
+#upload{
+	width:97%;
+	display:block;
+	clear:both;
+	font-size:1.3em;
+	background: #f0f8ff;
+	padding:1%;
+	margin:0;
+	border:1px solid #6da6d1;
+	overflow:auto;
+}
+
+#upload .miniatura{
+	padding:5px;
+	float:left;
+	position:relative;
+}
+
+#upload .miniatura img.predeterminada{
+	padding:3px;
+	border:2px solid #6da6d1;
+}
+
+#upload .miniatura a{
+	display:block;
+	text-align:center;
+}
+
+#upload .miniatura a:hover{
+	text-decoration:none;
+}
+
+#upload label{
+	display:block;
+	margin:10px 0 0 0;
+}
+
+#upload input{
+	width:95%;
+	margin-left:20px;
+}
+
+#upload input.boton{
+	width:10em;
+	margin:25px 1.5em 0 0;
+	float:right;
+}
+
+#upload-menu {
+	background: #fff;
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+	height: 2em;
+	width: 100%;
+	font-size:1.3em;
+}
+
+#upload-menu li {
+	float: left;
+	margin: 0 0 0 .75em;
+}
+
+#upload-menu a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: #000;
+	border-top: 3px solid #fff;
+}
+
+#upload-menu .current a {
+	background: #dfe8f1;
+	border-right: 2px solid #448abd;
+}
+
+/*
+Footer
+*/
+#footer{
+	width:100%;
+	clear:both;
+	background:url(../imagenes/footer.jpg) center top no-repeat;
+	margin:20px 0 0 0;
+	display:block;
+	text-align:center;
+}
+
+#footer p{
+	padding: 90px 0 0 0;
+}
+
+/*
+****************** ESTILOS DE LOS MENSAJES
+*/
+
+#mensaje{
+	display:none;	
+	cursor:pointer;
+	margin-bottom:15px;
+}
+
+#mensajeContenido{
+	padding:15px;
+}
+
+#mensaje.error{
+	background:#fef2f2;
+	border:1px solid #fd5858;
+}
+#mensaje.ok{
+	background:#f2fef4;
+	border:1px solid #0d921c;
+}
+
+#mensajeContenido ul{
+	list-style:none;
+	margin-left:25px;
+}
+
+/*
+**************** MODALES
+Estilos par las ventanas modales (edicion, etc). Se muestran en una ventana de fancybox
+*/
+
+#modal{
+	padding:10px;
+	font-size:1.2em;
+}
+
+#modal textarea{
+	width:500px;
+}
+
+#ajax{
+	text-align:center;
+	margin:20p 0;
+}
+
+
+
+
+/*
+VENTANA DE LOGIN DE USUARIOS
+*/
+
+#loginBox{
+	background:#FFFFFF none repeat scroll 0%;
+	border:1px solid #A2A2A2;
+	margin:5em auto;
+	padding:120px 20px 20px 20px;
+	width:400px;
+	font-size:1.4em;
+	background:url(../imagenes/fondologin.jpg) no-repeat;
+}
+
+#loginBox input{
+	width:380px;
+	display:block;
+}
+
+#loginBox label{
+	display:block;
+}
+
+#loginBox input.boton{
+	width:150px;
+	margin:20px auto;
+}
+
+.oculto{
+	display:none;
+}
+
+
+
+#modificar{
+	position:absolute;
+	width:600px;
+	height:400px;
+	background:red;
+	display:none;
+}
+
+#flIdiomas{
+	width:500px;
+	display:block;
+	margin:20px 0;
+}
+
+#flIdiomas input.check{
+	width:20px;
+	height:100px;
+	background:red;
+	border:0px;
+	background:#fff;
+	float:left;
+	display:inline;
+	margin:0 20px 0 5px;
+	padding:0;
+}
+
+#flIdiomas label.checkb{
+	line-height:100px;
+	display:inline;
+	float:left;
+	margin:0;
+	padding:0 0 0 10px;
+	border-left:1px solid #e4e4e4;
+}
+
+.impar{
+	background:#f5f5f5;
+}

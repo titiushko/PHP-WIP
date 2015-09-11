@@ -1,0 +1,29 @@
+El foro fue hecho usando una base de datos MySQL, pero creo que puede pasarse facilmente a otra. La estructura de la tabla en que se basa todo el foro es como sigue:
+(es el resultado de usar "DESCRIBE foro", 'foro' es el nombre de la tabla)
+
+|-------------------------------------------------------|
+|FIELD |TYPE            |NULL|KEY|DEFAULT|EXTRA         |
+|-------------------------------------------------------|
+|ID    |int(10) unsigned|    |PRI|0      |auto_increment|
+|PID   |int(10) unsigned|    |   |0      |              |
+|nombre|varchar (20)    |YES |   |       |              |
+|texto |varchar (40)    |YES |   |       |              |
+|texto2|text            |YES |   |       |              |
+|-------------------------------------------------------|
+
+CREATE TABLE `php`.`foro` (
+	`ID` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	`PID` INT( 10 ) NOT NULL DEFAULT '0',
+	`nombre` VARCHAR( 20 ) NULL ,
+	`texto` VARCHAR( 40 ) NULL ,
+	`texto2` TEXT NULL
+) ENGINE = InnoDB ;
+
+Todo el codigo esta en 3 archivos:
+addforo.php3       Con este se inserta una nueva nota
+mostrarforo.php3   Este muestra todo el foro
+verforo.php3       Este muestra una nota
+
+Cualquier duda, comentario o critica que tengas podes escribirme a s_garcia@ciudad.com.ar, solo dame un poco de tiempo para responderte.
+
+Espero que les sirva.

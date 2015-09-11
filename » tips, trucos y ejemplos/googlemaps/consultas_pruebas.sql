@@ -1,0 +1,3 @@
+INSERT INTO marcadores (nombre,direccion,latitud,longitud,type) VALUES ('Cerro Verde','Santa Ana, calle al cerro','13.83508','-89.653158','Turismo de montaña');
+INSERT INTO marcadores (nombre,direccion,latitud,longitud,type) VALUES ('Juayua', 'ruta de las flores', '13.844414', '-89.746327', 'turismo gastronomico');
+INSERT INTO marcadores (nombre,direccion,latitud,longitud,type) VALUES ('La costa del sol', 'la paz, el salvador', '13.351876', '-89.007854', 'Playas');

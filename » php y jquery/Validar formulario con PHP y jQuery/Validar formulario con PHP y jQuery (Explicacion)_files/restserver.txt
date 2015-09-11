@@ -1,0 +1,1 @@
+fb_sharepro_render([{"url":"http:\/\/web.ontuts.com\/tutoriales\/como-validar-un-formulario-con-php-y-javascript-jquery\/","share_count":10,"like_count":1,"comment_count":4,"total_count":15,"click_count":0,"normalized_url":"http:\/\/web.ontuts.com\/tutoriales\/como-validar-un-formulario-con-php-y-javascript-jquery\/"}]);

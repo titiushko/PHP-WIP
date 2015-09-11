@@ -1,0 +1,127 @@
+<style type="text/css">
+.suckerdiv ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+width: 160px; /* Width of Menu Items */
+border-bottom: 1px solid #ccc;
+}
+	
+.suckerdiv ul li{
+position: relative;
+}
+	
+/*Sub level menu items */
+.suckerdiv ul li ul{
+position: absolute;
+width: 130px; /*sub menu width*/
+top: 0;
+visibility: hidden;
+}
+
+/* Sub level menu links style */
+.suckerdiv ul li a{
+display:block;
+font:bold 11px/16px arial,helvetica,sans-serif;
+border-top:1px solid #ccc;
+border-left:1px solid #bbb;
+border-right:1px solid #888;
+border-bottom:1px solid #555;
+white-space:nowrap;
+text-indent:2px;
+width:130px;
+}
+
+.suckerdiv ul li a:visited{
+color:#494c59;
+}
+
+.suckerdiv ul li a:hover{
+color:#000;
+background:#e2e2ec url(tile-blue-over-3.gif) repeat-x;
+
+}
+
+.suckerdiv .subfolderstyle{
+background: url(media/arrow-list.gif) no-repeat center right;
+}
+
+	
+/* Holly Hack for IE \*/
+* html .suckerdiv ul li { float: left; height: 1%; }
+* html .suckerdiv ul li a { height: 1%; }
+/* End */
+
+</style>
+
+<script type="text/javascript">
+
+
+var menuids=["suckertree1"] //Enter id(s) of SuckerTree UL menus, separated by commas
+
+function buildsubmenus(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className="subfolderstyle"
+		if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+			ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+		else //else if this is a sub level submenu (ul)
+		  ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+		for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+		ultags[t].style.visibility="visible"
+		ultags[t].style.display="none"
+		}
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", buildsubmenus, false)
+else if (window.attachEvent)
+window.attachEvent("onload", buildsubmenus)
+
+</script>
+<div class="suckerdiv"> 
+  <ul id="suckertree1">
+    <li><a href="#">Catalogos</a>
+	 <ul>
+        <li><a href="#">Citas</a></li>
+        <li><a href="#">Operadores</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Unidades</a></li>
+        <li><a href="#">Agencias</a></li>
+        <li><a href="#">Mantenimiento</a></li>
+	  </ul>
+	</li>
+    <li><a href="#">Mantenimientos</a>
+	  <ul>
+        <li><a href="#">Orden De Mantenimiento</a></li>
+      </ul>
+	</li>
+    <li><a href="#">Facturacion</a> 
+      <ul>
+        <li><a href="#">Factura</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Reportes</a>
+	<ul>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Reporte Diario</a></li>
+        <li><a href="#">Reporte X Unidades</a></li>
+      </ul>
+	</li>
+    <li><a href="#">Orden De Servicio</a>
+	<ul>
+        <li><a href="#">Captura Orden</a></li>
+        <li><a href="#">Control Ordenes</a></li>
+      </ul>
+	</li>
+  </ul>
+</div>

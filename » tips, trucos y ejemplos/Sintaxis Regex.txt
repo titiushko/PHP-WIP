@@ -1,0 +1,15 @@
+a|b	Coincide a o b
+gr(a|e)y	Coincide gray o grey
+.	Coincide cualquier caracter
+[abc]	Coincide un solo caracter a, b o c
+[^abc]	Coincide cualquier caracter exepto a, b ó c
+[a-z]	Coincide un solo caracter en el rango de la a a la z
+[a-zA-Z]	Coincide un solo caracter en el rango de la a a la z ó de la A a la Z
+^	Coincide el inicio del nombre de archivo
+$	Coincide el final del nombre de archivo
+*	Coincide el elemento anterior cero o más veces
+?	Coincide el elemento anterior cero o una vez
++	Coincide el elemento anterior una o más veces
+{x}	Coincide el elemento anterior x veces
+{x,}	Coincide el elemento anterior x o más veces
+{x,y}	Coincide el elemento anterior entre x y y veces

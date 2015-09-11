@@ -1,0 +1,71 @@
+html{height: 100%;}
+
+/*Cuerpo de HTML COLOR FONDO COLOR NORMAL */
+body
+{
+background-color: #00FF00;
+
+}
+
+/*Para LO BLOCKQUOTE */
+blockquote
+{ background-color: #F1F4F5;
+  color: #4F5A5F;
+  border-color: #D4DBDE;
+}
+
+#main
+{ background: #FFFFFF url(back_2.jpg) repeat-y;
+  color: #4F5A5F;
+}
+
+#links, #footer
+{ background: #C5C9CD url(btn_2_invert.jpg);
+  color: #4F5A5F;
+  border-color: #4F5A5F;
+}
+
+#links a, #footer a
+{ background-color: transparent;
+  color: #4F5A5F;
+}
+
+#logo
+{ background: #FFFFFF url(logo_2.jpg) no-repeat;
+  color: #4F5A5F;
+}
+
+#links a:hover, #footer a:hover, #logo h1
+{ background-color: transparent;
+  color: #FFFFFF;
+}  
+
+#menu li a
+{ background: #C5C9CD url(btn_2.jpg);
+  color: #4F5A5F;
+  border-color: #4F5A5F;
+}
+
+
+#menu li a:hover, #menu li a#selected
+{ background: #C5C9CD url(btn_2_invert.jpg);
+  color: #FFFFFF;
+  border-color: #4F5A5F;
+} 
+
+
+/*Contenido y Columnas */
+#content, #column1, #column2, 
+.sidebaritem, .sidebaritem a, #column2 a,
+.sidebaritem a:hover, #column2 a:hover
+{ background: #FFFFFF;
+  color: #4F5A5F;
+}
+
+
+/* Para mi Caja de Texto y TextArea */
+input, textarea
+{ 
+  color: #4F5A5F;
+  border-color: #A2A9AE;
+}

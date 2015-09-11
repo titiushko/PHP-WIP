@@ -1,0 +1,13 @@
+--------------------------------------------------------------------------------
+1 Minute Gallery - Installation Instructions
+--------------------------------------------------------------------------------
+
+Please follow these steps to install the gallery on your server:
+
+   1. Upload index.php, skin folder and your images into separate directory on your website
+   2. Request the directory via the browser watching for messages from the script
+   3. Enjoy
+
+For the installation troubleshooting and other topics see the product documentation
+at: http://www.1minutegallery.com/docs/
+

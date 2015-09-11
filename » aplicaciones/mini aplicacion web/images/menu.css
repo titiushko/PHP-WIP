@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* For Menu Testing Only */
+
+body, html{margin:0;padding:0;}
+body{height:764px;}
+.hand{cursor:pointer;}
+.help{cursor:help;}
+
+/* CSS Popout Menu */
+
+#menu{
+position:absolute;
+top:5px;
+left:5px;
+background:#b3b1c0;
+padding:1px;
+z-index:2;
+width:132px;
+}
+
+#menu a, #menu h2{
+display:block;
+font:bold 11px/16px arial,helvetica,sans-serif;
+border-top:1px solid #ccc;
+border-left:1px solid #bbb;
+border-right:1px solid #888;
+border-bottom:1px solid #555;
+white-space:nowrap;
+text-indent:2px;
+width:130px;
+}
+
+#menu a{
+background:#edeef6 url(tile-silver-3.gif) repeat-x;
+text-decoration:none;
+}
+
+#menu a, #menu a:visited{
+color:#494c59;
+}
+
+#menu a:hover{
+color:#000;
+background:#e2e2ec url(tile-blue-over-3.gif) repeat-x;
+}
+
+#menu a:active{
+color:#060;
+background:#e2e2ec url(tile-blue-on-3.gif) repeat-x;
+}
+
+#menu h2{
+font:bold 10px/16px tahoma,helvetica,sans-serif;
+color:#fff;
+background:#369 url(tile-h2.gif) repeat-x;
+text-transform:uppercase;
+margin:0;
+padding:0;
+width:130px;
+}
+
+#menu li{
+list-style-type:none;
+}
+
+#menu ul li{
+position:relative;
+}
+
+#menu li ul{
+position:absolute;
+top:0;
+left:132px;
+display:none;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html #menu ul li{float:left;height:1%;}
+* html #menu ul li a{height:1%;}
+/* End */
+
+div#menu ul, #menu ul ul, div#menu ul ul ul{
+margin:0;
+padding:0;
+list-style-image:none;
+width:130px;
+}
+
+div#menu ul ul, div#menu ul ul ul, div#menu ul li:hover ul ul, div#menu ul li:hover ul ul ul{
+display:none;
+}
+
+div#menu ul li:hover ul, div#menu ul ul li:hover ul, div#menu ul ul ul li:hover ul{
+display:block;
+}
+
+/* Styling for Expand */
+
+#menu a.x, #menu a.x:visited{
+font-weight:bold;
+text-indent:2px;
+color:#494c59;
+background:#edeef6 url(tile-silver-3-x.gif) repeat-x;
+}
+
+#menu a.x:hover{
+color:#000;
+background:#edeef6 url(tile-blue-over-3.gif) repeat-x;
+}
+
+#menu a.x:active{
+color:#060;
+background:#e2e2ec url(tile-blue-on-3.gif) repeat-x;
+} 

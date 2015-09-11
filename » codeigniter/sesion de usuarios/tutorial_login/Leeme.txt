@@ -1,0 +1,8 @@
+1.- Abrir el Archivo de config.php y en la linea 17 colocar el url en donde se va ejecutar el proyecto el archivo esta en ./application/config/config.php
+2.- Configurar mis datos del servidor en el archivo de database.php esta ubicado en ./application/config/database.php apartir de la linea 51 a la 54
+
+si te gustan mis aportes dale like a la pagina en https://www.facebook.com/pages/Programacion-en-PHP/153571761391652?fref=photo 
+Unete al grupo https://www.facebook.com/groups/525350610921660/
+
+usuario: info@desarrollosphp.com
+password: 1234
