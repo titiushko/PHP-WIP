@@ -1,14 +1,6 @@
 <?php
 include "../ayudadores/abrir_conexion.php";
-
-function parseToXML($htmlStr) {
-    $xmlStr = str_replace('<', '&lt;', $htmlStr);
-    $xmlStr = str_replace('>', '&gt;', $xmlStr);
-    $xmlStr = str_replace('"', '&quot;', $xmlStr);
-    $xmlStr = str_replace("'", '&#39;', $xmlStr);
-    $xmlStr = str_replace("&", '&amp;', $xmlStr);
-    return $xmlStr;
-}
+include "../ayudadores/utilidades.php";
 
 // Select all the rows in the markers table
 $result = $conexion->query("SELECT * FROM markers WHERE 1") or die ("Fallo la consulta!!".$conexion->error);
